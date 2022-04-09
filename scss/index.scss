@@ -1,3 +1,8 @@
+
+$hover-color : #EC5242;
+$primary-dark-color : #272A31;
+$primary-white-color : #D3D3D3;
+
 body,
 h1,
 h2,
@@ -33,3 +38,14 @@ body {
   overflow-x: hidden;
 }
 
+
+body {
+    background-color: $hover-color;
+}
+
+
+
+
+@media screen  and (min-width: 768px) {
+
+}
