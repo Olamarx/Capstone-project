@@ -1,7 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+
+$font1: cocogoose, sans-serif;
+$font2: lato, sans-serif;
+
 
 $hover-color : #EC5242;
 $primary-dark-color : #272A31;
 $primary-white-color : #D3D3D3;
+$header-background-color: #faf7f7;
+
+$font-weights: (
+    regular: 400,
+    medium: 500,
+    bold: 700,
+);
 
 body,
 h1,
@@ -39,13 +52,189 @@ body {
 }
 
 
-body {
-    background-color: $hover-color;
-}
 
 
 
 
 @media screen  and (min-width: 768px) {
+    .top-nav{
+        width: 100%;
+        background-color: $primary-dark-color;
+        height: 40px;
+        display: flex;
+        justify-content: end;
+    &-content {
+        margin-right: 100px;
+        // border: 2px solid green;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        color: $primary-white-color;
+        font-weight: map-get($font-weights , medium);
+    
+        i:hover {
+            color: $hover-color;
+        }
+    a{
+        color: $primary-white-color;
+    
+        &:hover{
+            color: $hover-color;
+        }
+    }
+    }
+    }
+
+  
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  background-color: $header-background-color;
+align-items: center;
+   .button-logo{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: $header-background-color;
+
+& i{
+  font-size: 50px;
+  color: $hover-color;
+}
+
+    .logo-name{
+    font-family: $font1;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    }
+   }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

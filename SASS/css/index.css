@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 body,
 h1,
 h2,
@@ -33,7 +35,77 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  background-color: #EC5242;
+@media screen and (min-width: 768px) {
+  .top-nav {
+    width: 100%;
+    background-color: #272A31;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .top-nav-content {
+    margin-right: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #D3D3D3;
+    font-weight: 500;
+  }
+  .top-nav-content i:hover {
+    color: #EC5242;
+  }
+  .top-nav-content a {
+    color: #D3D3D3;
+  }
+  .top-nav-content a:hover {
+    color: #EC5242;
+  }
+  .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: #faf7f7;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-content .button-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    background-color: #faf7f7;
+  }
+  .header-content .button-logo i {
+    font-size: 50px;
+    color: #EC5242;
+  }
+  .header-content .button-logo .logo-name {
+    font-family: cocogoose, sans-serif;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 /*# sourceMappingURL=index.css.map */
