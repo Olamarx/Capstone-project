@@ -53,9 +53,9 @@ body {
 
 .open-nav{
   font-size: 30px;
-  margin: 10px;
-  // position: fixed;
-  display: none;
+  margin: 20px;
+  position: fixed;
+  display: flex;
 }
 
 .open-nav.active{
@@ -71,9 +71,9 @@ body {
   margin: 0;
 }
 
-.close-nav.active {
-  display: none;
-}
+// .close-nav.active {
+//   display: none;
+// }
 
 
 
@@ -83,10 +83,15 @@ body {
 }
 
 .aside-content {
-position: relative;
+position: fixed;
 background-color: $primary-dark-color;
 height: 100vh;
 width: 100%;
+display: none;
+}
+
+.aside-content.active {
+display: block;
 }
 
 .top-nav-content {
@@ -166,6 +171,14 @@ font-size: 20px;
   margin-top: 100px;
 }
 
+.bigger-body-bg {
+  background-size: cover;
+  height: 100vh;
+  background-position: top;
+  background-image: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-color: green;
+ }
 
 
 
@@ -192,80 +205,51 @@ font-size: 20px;
 
 
 
+@media screen  and (min-width: 768px) { 
 
-
-
-
-
-
-@media screen  and (min-width: 768px) {
-.open-nav{
-  display: none;
-}
-.close-nav {
-  display: none;
-}
-
-    .top-nav{
-        width: 100%;
-        background-color: $primary-dark-color;
-        height: 40px;
-        display: flex;
-        justify-content: end;
-
-    &-content {
-        margin-right: 100px;
-        // border: 2px solid green;
-        display: flex;
-        gap: 40px;
-        align-items: center;
-        color: $primary-white-color;
-        font-weight: map-get($font-weights , medium);
-        margin-top: 0;
-    
-        i:hover {
-            color: $hover-color;
-        }
-    a{
-        color: $primary-white-color;
-    
-        &:hover{
-            color: $hover-color;
-        }
-    }
-    }
-    }
-
-    .center-btn-logo{
+  .header-content {
       display: flex;
-      justify-content: center;
-      margin-top: 0;
-    }
-    
-    
-.header-content {
-  display: flex;
-  justify-content: space-around;
-  background-color: $header-background-color;
-  border-bottom: 1px solid #e9e7e7;
-  box-shadow: 0 0 8px 03px #c4c1c1;
-align-items: center;
-width: 100%;
-height: 80px;
-z-index: 5;
-   .button-logo{
+      justify-content: space-around;
+      background-color: $header-background-color;
+      border-bottom: 1px solid #e9e7e7;
+      box-shadow: 0 0 8px 03px #c4c1c1;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      z-index: 5;
+  }
+
+.button-logo{
     display: flex;
     align-items: center;
     gap: 5px;
     border: none;
     background-color: $header-background-color;
-
-& i{
-  font-size: 50px;
-  color: $hover-color;
 }
 
-    .logo-name{
+
+.header-content i{
+    font-size: 50px;
+    color: $hover-color;
+}
+
+
+
+
+.header-middle-content {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: $font2;
+  margin-top: 0px;
+}
+
+  .header-middle-content li a:hover{
+    color: $hover-color;
+  }
+
+  .logo-name{
     font-family: $font1;
     font-size: 15px;
     display: flex;
@@ -273,67 +257,94 @@ z-index: 5;
     justify-content: start;
     margin: 0;
     padding: 0;
+  }
 
-    span {
+    .logo-name span {
       margin: 0;
       padding: 0;
-    }
-    }
-   }  
-}
-
-.header-middle-content {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-font-size: 20px;
-font-family: $font2;
-margin-top: 0px;
-
-
-
-  & li a:hover{
-    color: $hover-color;
   }
-}
-
-.campaign-btn-center {
-  margin-top: 0;
-}
-
-
-.campaign-button {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  border: 1px solid $hover-color;
-  color: $hover-color;
-  font-family: $font2;
-  padding: 10px 3px;
-}
-
-  & i{
-    font-size: 20px;
-  }
-
-}
-
-.bigger-body-bg {
-  background-size: cover;
-  height: 100vh;
-  background-position: top;
-  background-image: url(/images/bkgrnd.png);
-  background-repeat: no-repeat;
-  // z-index: 10;
-}
-
 
 .header-middle-content li a {
-  color: $primary-dark-color;
+    color: $primary-dark-color;
   }
+  
+  
+  .open-nav{
+    display: none;
+  }
+  
+  .close-nav {
+    display: none;
+  }
+  
+  .top-nav{
+    width: 100%;
+    background-color: $primary-dark-color;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .top-nav-content {
+    margin-right: 100px;
+    // border: 2px solid green;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: $primary-white-color;
+    font-weight: map-get($font-weights , medium);
+    margin-top: 0;
+  }
+  
+  .top-nav-content i:hover {
+    color: $hover-color;
+  }
+  
+  .top-nav-content a{
+    color: $primary-white-color;
+  }
+  .top-nav-content a:hover{
+        color: $hover-color;
+    }
+  
+  
+    .center-btn-logo{
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+    }
 
+    .campaign-btn-center {
+      margin-top: 0;
+    }
+    
+    
+    .campaign-button {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border: 4px solid $hover-color;
+      color: $hover-color;
+      font-family: $font2;
+      padding: 2px 40px;
+    }
+    
+    .campaign-button i {
+        font-size: 20px;
+        margin: 0;
+      }
 
+      .bigger-body-bg {
+        background-size: cover;
+        height: 100vh;
+        background-position: top;
+        background-image: url(/images/bkgrnd.png);
+        background-repeat: no-repeat;
+       }
 
+       .aside-content {
+        display: contents;
+        }
 
 
 
@@ -384,65 +395,4 @@ margin-top: 0px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+  }  
