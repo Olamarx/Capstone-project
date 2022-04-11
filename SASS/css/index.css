@@ -35,7 +35,157 @@ body {
   overflow-x: hidden;
 }
 
+.open-nav {
+  font-size: 30px;
+  margin: 10px;
+  display: none;
+}
+
+.open-nav.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.close-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  color: #EC5242;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0;
+}
+
+.close-nav.active {
+  display: none;
+}
+
+.time-put-up {
+  margin: 20px 20px 0 0;
+}
+
+.aside-content {
+  position: relative;
+  background-color: #272A31;
+  height: 100vh;
+  width: 100%;
+}
+
+.top-nav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: cocogoose, sans-serif;
+  font-size: small;
+  color: #D3D3D3;
+  margin-top: 70px;
+}
+
+.top-nav-content a {
+  color: #D3D3D3;
+  font-family: lato, sans-serif;
+  font-size: 20px;
+}
+
+.top-nav-content i:hover, .top-nav-content a:hover {
+  color: #EC5242;
+}
+
+.center-btn-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 70px;
+}
+
+.button-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  color: #EC5242;
+  background-color: transparent;
+}
+
+.button-logo i {
+  font-size: 60px;
+}
+
+.logo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
+  font-family: lato, sans-serif;
+}
+
+.header-middle-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 70px;
+}
+
+.header-middle-content li a {
+  color: #D3D3D3;
+  font-family: lato, sans-serif;
+  font-size: 20px;
+}
+
+.header-middle-content li a:hover {
+  color: #EC5242;
+}
+
+.campaign-button {
+  padding: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid grey;
+  background-color: transparent;
+  color: #faf7f7;
+  padding: 3px 25px;
+  opacity: 0.5;
+}
+
+.campaign-btn-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
 @media screen and (min-width: 768px) {
+  .open-nav {
+    display: none;
+  }
+  .close-nav {
+    display: none;
+  }
   .top-nav {
     width: 100%;
     background-color: #272A31;
@@ -58,6 +208,7 @@ body {
             align-items: center;
     color: #D3D3D3;
     font-weight: 500;
+    margin-top: 0;
   }
   .top-nav-content i:hover {
     color: #EC5242;
@@ -67,6 +218,15 @@ body {
   }
   .top-nav-content a:hover {
     color: #EC5242;
+  }
+  .center-btn-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0;
   }
   .header-content {
     display: -webkit-box;
@@ -124,12 +284,19 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 100px;
+    width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 20px;
     font-family: lato, sans-serif;
+    margin-top: 0px;
   }
   .header-middle-content li a:hover {
     color: #EC5242;
+  }
+  .campaign-btn-center {
+    margin-top: 0;
   }
   .campaign-button {
     display: -webkit-box;
@@ -153,6 +320,9 @@ body {
     background-position: top;
     background-image: url(/images/bkgrnd.png);
     background-repeat: no-repeat;
+  }
+  .header-middle-content li a {
+    color: #272A31;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -51,12 +51,120 @@ body {
   overflow-x: hidden;
 }
 
+.open-nav{
+  font-size: 30px;
+  margin: 10px;
+  // position: fixed;
+  display: none;
+}
+
+.open-nav.active{
+  display: flex;
+}
+
+.close-nav{
+  display: flex;
+  font-size: 20px;
+  color: $hover-color;
+  justify-content: end;
+  // font-size: 30px;
+  margin: 0;
+}
+
+.close-nav.active {
+  display: none;
+}
 
 
 
 
+.time-put-up {
+  margin: 20px 20px 0 0;
+}
 
+.aside-content {
+position: relative;
+background-color: $primary-dark-color;
+height: 100vh;
+width: 100%;
+}
 
+.top-nav-content {
+  display: flex;
+  justify-content: space-around;
+  font-family: $font1;
+  font-size: small;
+  color: $primary-white-color;
+  margin-top: 70px;
+}
+
+.top-nav-content a {
+  color: $primary-white-color;
+  font-family: $font2;
+font-size: 20px;
+}
+
+.top-nav-content i:hover, .top-nav-content a:hover {
+  color: $hover-color;
+}
+
+.center-btn-logo{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.button-logo {
+  display: flex;
+  border: none;
+  align-items: center;
+  gap: 5px;
+  color: $hover-color;
+  background-color: transparent;
+   & i {
+     font-size: 60px;
+   }
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: $font2;
+}
+
+.header-middle-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.header-middle-content li a {
+color: $primary-white-color;
+font-family: $font2;
+font-size: 20px;
+  
+&:hover {
+  color: $hover-color;
+}
+}
+
+.campaign-button {
+  padding: 20px auto;
+  display: flex;
+  align-items: center;
+  border: 2px solid grey;
+  background-color: transparent;
+  color: $header-background-color;
+  padding: 3px 25px;
+  opacity: 0.5;
+}
+
+.campaign-btn-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
 
 
 
@@ -91,12 +199,20 @@ body {
 
 
 @media screen  and (min-width: 768px) {
+.open-nav{
+  display: none;
+}
+.close-nav {
+  display: none;
+}
+
     .top-nav{
         width: 100%;
         background-color: $primary-dark-color;
         height: 40px;
         display: flex;
         justify-content: end;
+
     &-content {
         margin-right: 100px;
         // border: 2px solid green;
@@ -105,6 +221,7 @@ body {
         align-items: center;
         color: $primary-white-color;
         font-weight: map-get($font-weights , medium);
+        margin-top: 0;
     
         i:hover {
             color: $hover-color;
@@ -119,7 +236,13 @@ body {
     }
     }
 
-  
+    .center-btn-logo{
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+    }
+    
+    
 .header-content {
   display: flex;
   justify-content: space-around;
@@ -161,22 +284,33 @@ z-index: 5;
 
 .header-middle-content {
   display: flex;
-  gap: 100px;
+  width: 50%;
+  justify-content: space-between;
 font-size: 20px;
 font-family: $font2;
+margin-top: 0px;
+
+
+
   & li a:hover{
     color: $hover-color;
   }
 }
 
+.campaign-btn-center {
+  margin-top: 0;
+}
+
+
 .campaign-button {
   display: flex;
   align-items: center;
   gap: 5px;
-  border: 4px solid $hover-color;
+  border: 1px solid $hover-color;
   color: $hover-color;
   font-family: $font2;
-  padding: 4px 3px;
+  padding: 10px 3px;
+}
 
   & i{
     font-size: 20px;
@@ -190,10 +324,13 @@ font-family: $font2;
   background-position: top;
   background-image: url(/images/bkgrnd.png);
   background-repeat: no-repeat;
+  // z-index: 10;
 }
 
 
-
+.header-middle-content li a {
+  color: $primary-dark-color;
+  }
 
 
 
