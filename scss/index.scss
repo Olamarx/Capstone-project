@@ -4,16 +4,15 @@
 $font1: cocogoose, sans-serif;
 $font2: lato, sans-serif;
 
-
-$hover-color : #EC5242;
-$primary-dark-color : #272A31;
-$primary-white-color : #D3D3D3;
+$hover-color : #ec5242;
+$primary-dark-color : #272a31;
+$primary-white-color : #d3d3d3;
 $header-background-color: #faf7f7;
 
 $font-weights: (
-    regular: 400,
-    medium: 500,
-    bold: 700,
+  regular: 400,
+  medium: 500,
+  bold: 700,
 );
 
 body,
@@ -51,18 +50,19 @@ body {
   overflow-x: hidden;
 }
 
-.open-nav{
+.open-nav {
   font-size: 30px;
   margin: 20px;
   position: fixed;
   display: flex;
+  // z-index: 20;
 }
 
-.open-nav.active{
+.open-nav.active {
   display: flex;
 }
 
-.close-nav{
+.close-nav {
   display: flex;
   font-size: 20px;
   color: $hover-color;
@@ -75,23 +75,20 @@ body {
 //   display: none;
 // }
 
-
-
-
 .time-put-up {
   margin: 20px 20px 0 0;
 }
 
 .aside-content {
-position: fixed;
-background-color: $primary-dark-color;
-height: 100vh;
-width: 100%;
-display: none;
+  position: fixed;
+  background-color: $primary-dark-color;
+  height: 100vh;
+  width: 100%;
+  display: none;
 }
 
 .aside-content.active {
-display: block;
+  display: block;
 }
 
 .top-nav-content {
@@ -106,14 +103,15 @@ display: block;
 .top-nav-content a {
   color: $primary-white-color;
   font-family: $font2;
-font-size: 20px;
+  font-size: 20px;
 }
 
-.top-nav-content i:hover, .top-nav-content a:hover {
+.top-nav-content i:hover,
+.top-nav-content a:hover {
   color: $hover-color;
 }
 
-.center-btn-logo{
+.center-btn-logo {
   display: flex;
   justify-content: center;
   margin-top: 70px;
@@ -126,9 +124,10 @@ font-size: 20px;
   gap: 5px;
   color: $hover-color;
   background-color: transparent;
-   & i {
-     font-size: 60px;
-   }
+
+  & i {
+    font-size: 60px;
+  }
 }
 
 .logo-name {
@@ -145,13 +144,13 @@ font-size: 20px;
 }
 
 .header-middle-content li a {
-color: $primary-white-color;
-font-family: $font2;
-font-size: 20px;
-  
-&:hover {
-  color: $hover-color;
+  color: $primary-white-color;
+  font-family: $font2;
+  font-size: 20px;
 }
+
+.header-middle-content li a:hover {
+  color: $hover-color;
 }
 
 .campaign-button {
@@ -173,14 +172,47 @@ font-size: 20px;
 
 .bigger-body-bg {
   background-size: cover;
-  height: 100vh;
+  height: 754px;
+  margin-top: 0;
+  width: 100%;
   background-position: top;
   background-image: url(/images/background.png);
   background-repeat: no-repeat;
- }
+}
+
+.header-text-content {
+  padding: 90px 17px 0 17px;
+}
 
 
- 
+.header-text-h3 {
+  color: $hover-color;
+  font-family: $font2;
+}
+
+.header-text-h1 {
+  font-family: $font1;
+  color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-position: top;
+  background-image: url(/images/red-bg.jpg);
+}
+
+.header-text-para {
+  background-color: white;
+padding: 5px 8px 0 30px;
+font-family: $font2;
+}
+
+
+.next-class-date {
+  font-family: $font1;
+  font-size: 20px;
+}
 
 
 
@@ -205,51 +237,171 @@ font-size: 20px;
 
 
 
-@media screen  and (min-width: 768px) { 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen  and (min-width: 768px) {
   .header-content {
-      display: flex;
-      justify-content: space-around;
-      background-color: $header-background-color;
-      border-bottom: 1px solid #e9e7e7;
-      box-shadow: 0 0 8px 03px #c4c1c1;
-      align-items: center;
-      width: 100%;
-      height: 80px;
-      z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    background-color: $header-background-color;
+    border-bottom: 1px solid #e9e7e7;
+    box-shadow: 0 0 8px 03px #c4c1c1;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+    // position: fixed;
+  }
+.whole-body-nav {
+    // position: fixed;
+    width: 100%;
+    height: 40px;
+}
+
+  .top-nav {
+    width: 100%;
+    background-color: $primary-dark-color;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    z-index: 5;
+
   }
 
-.button-logo{
+
+  .button-logo {
     display: flex;
     align-items: center;
     gap: 5px;
     border: none;
     background-color: $header-background-color;
-}
+  }
 
-
-.header-content i{
+  .header-content i {
     font-size: 50px;
-    color: $hover-color;
-}
-
-
-
-
-.header-middle-content {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-  font-size: 20px;
-  font-family: $font2;
-  margin-top: 0px;
-}
-
-  .header-middle-content li a:hover{
     color: $hover-color;
   }
 
-  .logo-name{
+  .header-middle-content {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: $font2;
+    margin-top: 0;
+  }
+
+  .header-middle-content li a:hover {
+    color: $hover-color;
+  }
+
+  .logo-name {
     font-family: $font1;
     font-size: 15px;
     display: flex;
@@ -259,32 +411,25 @@ font-size: 20px;
     padding: 0;
   }
 
-    .logo-name span {
-      margin: 0;
-      padding: 0;
+  .logo-name span {
+    margin: 0;
+    padding: 0;
   }
 
-.header-middle-content li a {
+  .header-middle-content li a {
     color: $primary-dark-color;
   }
-  
-  
-  .open-nav{
+
+
+  .open-nav {
     display: none;
   }
-  
+
   .close-nav {
     display: none;
   }
-  
-  .top-nav{
-    width: 100%;
-    background-color: $primary-dark-color;
-    height: 40px;
-    display: flex;
-    justify-content: end;
-  }
-  
+
+
   .top-nav-content {
     margin-right: 100px;
     // border: 2px solid green;
@@ -292,100 +437,98 @@ font-size: 20px;
     gap: 40px;
     align-items: center;
     color: $primary-white-color;
-    font-weight: map-get($font-weights , medium);
+    font-weight: map-get($font-weights, medium);
     margin-top: 0;
   }
-  
+
   .top-nav-content i:hover {
     color: $hover-color;
   }
-  
-  .top-nav-content a{
+
+  .top-nav-content a {
     color: $primary-white-color;
   }
-  .top-nav-content a:hover{
-        color: $hover-color;
-    }
-  
-  
-    .center-btn-logo{
-      display: flex;
-      justify-content: center;
-      margin-top: 0;
-    }
 
-    .campaign-btn-center {
-      margin-top: 0;
-    }
-    
-    
-    .campaign-button {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      border: 4px solid $hover-color;
-      color: $hover-color;
-      font-family: $font2;
-      padding: 2px 40px;
-    }
-    
-    .campaign-button i {
-        font-size: 20px;
-        margin: 0;
-      }
-
-      .bigger-body-bg {
-        background-size: cover;
-        height: 100vh;
-        background-position: top;
-        background-image: url(/images/bkgrnd.png);
-        background-repeat: no-repeat;
-       }
-
-       .aside-content {
-        display: contents;
-        }
+  .top-nav-content a:hover {
+    color: $hover-color;
+  }
 
 
+  .center-btn-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .campaign-btn-center {
+    margin-top: 0;
+  }
 
 
+  .campaign-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 4px solid $hover-color;
+    color: $hover-color;
+    font-family: $font2;
+    padding: 2px 40px;
+  }
+
+  .campaign-button i {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .bigger-body-bg {
+    background-size: cover;
+    height: 100vh;
+    margin-top: 3px;
+    background-position: top;
+    background-image: url(/images/bkgrnd.png);
+    background-repeat: no-repeat;
+  }
+
+  .aside-content {
+    display: contents;
+  }
+
+  .header-text-content {
+    padding: 90px 100px 0 100px;
+  }
 
 
+  .header-text-h3 {
+    color: $hover-color;
+    font-family: $font2;
+    font-size: 40px;
+  }
+
+  .header-text-h1 {
+    font-family: $font1;
+    color: transparent;
+    font-size: 80px;
+    background-size: cover;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    background-position: top;
+    line-height: 1.2;
+    color: transparent;
+    background-image: url(/images/red-bg.jpg);
+  }
 
 
+  .header-text-para {
+    background-color: white;
+  padding: 8px 950px 0 150px;
+  font-family: $font2;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .next-class-date {
+    font-family: $font1;
+    font-size: 40px;
+    opacity: 0.7;
+  }
 
 
 
@@ -395,4 +538,91 @@ font-size: 20px;
 
 
 
-  }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
