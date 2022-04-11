@@ -53,7 +53,7 @@ body {
 .open-nav {
   font-size: 30px;
   margin: 20px;
-  position: fixed;
+  // position: fixed;
   display: flex;
   // z-index: 20;
 }
@@ -172,7 +172,7 @@ body {
 
 .bigger-body-bg {
   background-size: cover;
-  height: 754px;
+  height: 554px;
   margin-top: 0;
   width: 100%;
   background-position: top;
@@ -218,7 +218,14 @@ font-family: $font2;
 
 
 
-
+.main-curriculum-bg {
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  background-position: top;
+  background-image: url(/images/curriculum-bg.jpg);
+  background-repeat: no-repeat;
+}
 
 
 
@@ -531,7 +538,14 @@ font-family: $font2;
   }
 
 
-
+  .main-curriculum-bg {
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    background-position: top;
+    background-image: url(/images/curriculum-bg.jpg);
+    background-repeat: no-repeat;
+  }
 
 
 
