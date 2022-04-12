@@ -215,6 +215,9 @@ font-family: $font2;
 }
 
 .main-curriculum-bg {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   background-size: cover;
   height: 75vh;
   width: 100%;
@@ -222,6 +225,10 @@ font-family: $font2;
   background-image: url(/images/curriculum-bg.jpg);
   background-repeat: no-repeat;
 }
+
+
+
+
 
 .body-content {
   display: flex;
@@ -305,23 +312,129 @@ border: 2px solid white;
   color: $primary-white-color;
 }
 
+.featured-teachers-h3 {
+  display: flex;
+  justify-content: center;
+  font-family: $font2;
+  margin-top: 50px;
+}
+
+
+
+.card-image {
+width: 150px;
+height: 150px;
+background-color: green;
+// margin-left: 200px;
+// margin-bottom: 300px;
 
 
 
 
 
 
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  background-position: top;
+  background-image: url(/images/checker.jpg);
+  background-repeat: no-repeat;
+}
+
+.card-image-2 {
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 10px;
+
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  background-position: top;
+  background-image: url(/images/colleen-van.jpeg);
+  background-repeat: no-repeat;
+}
+
+.card-2 {
+  background-image: url(/images/yaakov.jpg);
+}
+
+.card-3 {
+  background-image: url(/images/nancy.jpg);
+  
+}
+
+.card-4 {
+  background-image: url(/images/emili.jpg);
+  
+}
+
+.card-5 {
+  background-image: url(/images/steven.jpg);
+}
+
+.card-6 {
+  background-image: url(/images/andrew.jpg);
+}
 
 
 
 
+.body-of-whole-card {
+  // height: 50vh;
+  display: grid;
+  // width: 50%;
+  grid-template-columns: 1fr;
+  // justify-items: center;
+  margin: auto 2px;
+}
 
 
+.cards {
+  display: flex;
+  gap: 30%;
+}
+
+.image-content-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.image-content {
+  line-height: 0.3;
+}
 
 
+.name {
+  font-family: $font2;
+}
+
+.course-taken-h5 {
+  font-style: italic;
+  font-family: $font2;
+  color: $hover-color;
+  margin-bottom: 13px;
+}
+
+.teacher-hr {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  // border: none;
+  // height: 5px;
+  color: gray;
+}
 
 
-
+.teacher-content-para {
+  margin-right: 150px;
+  margin-top: 16px;
+}
 
 
 
@@ -707,6 +820,129 @@ border: 2px solid white;
 
 
 
+.featured-teachers-h3 {
+  display: flex;
+  justify-content: center;
+  font-family: $font2;
+  margin-top: 50px;
+}
+
+
+
+.card-image {
+width: 150px;
+height: 150px;
+background-color: green;
+// margin-left: 200px;
+// margin-bottom: 300px;
+
+
+
+
+
+
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  background-position: top;
+  background-image: url(/images/checker.jpg);
+  background-repeat: no-repeat;
+}
+
+.card-image-2 {
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 10px;
+
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  background-position: top;
+  background-image: url(/images/colleen-van.jpeg);
+  background-repeat: no-repeat;
+}
+
+.card-2 {
+  background-image: url(/images/yaakov.jpg);
+}
+
+.card-3 {
+  background-image: url(/images/nancy.jpg);
+  
+}
+
+.card-4 {
+  background-image: url(/images/emili.jpg);
+  
+}
+
+.card-5 {
+  background-image: url(/images/steven.jpg);
+}
+
+.card-6 {
+  background-image: url(/images/andrew.jpg);
+}
+
+
+
+
+.body-of-whole-card {
+  // height: 50vh;
+  display: grid;
+  // width: 50%;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: auto 200px;
+}
+
+
+.cards {
+  display: flex;
+  gap: 150px;
+}
+
+.image-content-body {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-around;
+}
+
+.image-content {
+  line-height: 0.3;
+}
+
+
+.name {
+  font-family: $font2;
+}
+
+.course-taken-h5 {
+  font-style: italic;
+  font-family: $font2;
+  color: $hover-color;
+  margin-bottom: 13px;
+}
+
+.teacher-hr {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  // border: none;
+  // height: 5px;
+  color: gray;
+}
+
+
+.teacher-content-para {
+  margin-right: 250px;
+  margin-top: 25px;
+}
 
 
 

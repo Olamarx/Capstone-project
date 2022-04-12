@@ -38,26 +38,18 @@ body {
 .open-nav {
   font-size: 30px;
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .open-nav.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .close-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 20px;
   color: #ec5242;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   margin: 0;
 }
 
@@ -78,11 +70,8 @@ body {
 }
 
 .top-nav-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   font-family: cocogoose, sans-serif;
   font-size: small;
   color: #d3d3d3;
@@ -101,50 +90,33 @@ body {
 }
 
 .center-btn-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 70px;
 }
 
 .button-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 5px;
   color: #ec5242;
   background-color: transparent;
 }
-
 .button-logo i {
   font-size: 60px;
 }
 
 .logo-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-size: 18px;
   font-family: lato, sans-serif;
 }
 
 .header-middle-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-top: 70px;
 }
 
@@ -160,12 +132,8 @@ body {
 
 .campaign-button {
   padding: 20px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 2px solid grey;
   background-color: transparent;
   color: #faf7f7;
@@ -174,12 +142,8 @@ body {
 }
 
 .campaign-btn-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 100px;
 }
 
@@ -235,12 +199,8 @@ body {
 }
 
 .body-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 10px;
 }
 
@@ -267,15 +227,9 @@ body {
 }
 
 .languages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin: auto 80px;
   background-color: rgba(82, 81, 81, 0.7);
   margin-top: 10px;
@@ -309,12 +263,8 @@ body {
 }
 
 .join-our-course-btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 40px;
 }
 
@@ -329,12 +279,8 @@ body {
 }
 
 .featured-teachers-h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-family: lato, sans-serif;
   margin-top: 50px;
 }
@@ -386,30 +332,20 @@ body {
 }
 
 .body-of-whole-card {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   margin: auto 2px;
 }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30%;
 }
 
 .image-content-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .image-content {
@@ -441,148 +377,131 @@ body {
 
 @media screen and (min-width: 768px) {
   .header-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     background-color: #faf7f7;
     border-bottom: 1px solid #e9e7e7;
-    -webkit-box-shadow: 0 0 8px 03px #c4c1c1;
-            box-shadow: 0 0 8px 03px #c4c1c1;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    box-shadow: 0 0 8px 3px #c4c1c1;
+    align-items: center;
     width: 100%;
     height: 80px;
     z-index: 5;
   }
+
   .whole-body-nav {
     width: 100%;
     height: 40px;
   }
+
   .top-nav {
     width: 100%;
     background-color: #272a31;
     height: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    justify-content: end;
     z-index: 5;
   }
+
   .button-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     gap: 5px;
     border: none;
     background-color: #faf7f7;
   }
+
   .header-content i {
     font-size: 50px;
     color: #ec5242;
   }
+
   .header-middle-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 50%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     font-size: 20px;
     font-family: lato, sans-serif;
     margin-top: 0;
   }
+
   .header-middle-content li a:hover {
     color: #ec5242;
   }
+
   .logo-name {
     font-family: cocogoose, sans-serif;
     font-size: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    flex-direction: column;
+    justify-content: start;
     margin: 0;
     padding: 0;
   }
+
   .logo-name span {
     margin: 0;
     padding: 0;
   }
+
   .header-middle-content li a {
     color: #272a31;
   }
+
   .open-nav {
     display: none;
   }
+
   .close-nav {
     display: none;
   }
+
   .top-nav-content {
     margin-right: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 40px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     color: #d3d3d3;
     font-weight: 500;
     margin-top: 0;
   }
+
   .top-nav-content i:hover {
     color: #ec5242;
   }
+
   .top-nav-content a {
     color: #d3d3d3;
   }
+
   .top-nav-content a:hover {
     color: #ec5242;
   }
+
   .center-btn-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-top: 0;
   }
+
   .campaign-btn-center {
     margin-top: 0;
   }
+
   .campaign-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     gap: 5px;
     border: 4px solid #ec5242;
     color: #ec5242;
     font-family: lato, sans-serif;
     padding: 2px 40px;
   }
+
   .campaign-button i {
     font-size: 20px;
     margin: 0;
   }
+
   .bigger-body-bg {
     background-size: cover;
     height: 100vh;
@@ -591,17 +510,21 @@ body {
     background-image: url(/images/bkgrnd.png);
     background-repeat: no-repeat;
   }
+
   .aside-content {
     display: contents;
   }
+
   .header-text-content {
     padding: 90px 100px 0 100px;
   }
+
   .header-text-h3 {
     color: #ec5242;
     font-family: lato, sans-serif;
     font-size: 40px;
   }
+
   .header-text-h1 {
     font-family: cocogoose, sans-serif;
     color: transparent;
@@ -614,18 +537,21 @@ body {
     color: transparent;
     background-image: url(/images/red-bg.jpg);
   }
+
   .header-text-para {
     background-color: white;
     margin: 0% 50% 3% 10%;
     font-family: lato, sans-serif;
     overflow: hidden;
   }
+
   .next-class-date {
     font-family: cocogoose, sans-serif;
     font-size: 40px;
     opacity: 0.7;
     overflow: hidden;
   }
+
   .main-curriculum-bg {
     background-size: cover;
     height: 55vh;
@@ -634,108 +560,99 @@ body {
     background-image: url(/images/curriculum-bg.jpg);
     background-repeat: no-repeat;
   }
+
   .body-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding-top: 30px;
   }
+
   .main-curriculum-h3 {
     color: white;
     font-family: lato, sans-serif;
     font-size: 30px;
   }
+
   .hr {
     width: 50px;
     background-color: #ec5242;
     height: 2px;
     border: none;
   }
+
   .languages {
     background-color: rgba(82, 81, 81, 0.7);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     margin: 0;
     margin-top: 5px;
   }
+
   .languages:hover {
     border: 2px solid white;
   }
+
   .font-for-lang {
     font-size: 60px;
     color: #ec5242;
   }
+
   .center-lang-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
+
   .languages-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     width: 45%;
   }
+
   .languages-para {
     width: 150px;
     text-align: center;
     color: #d3d3d3;
   }
+
   .language-h3 {
     font-family: lato, sans-serif;
     color: #ec5242;
   }
+
   .languages-para {
     font-family: lato, sans-serif;
     color: white;
   }
+
   .whole-program-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-top: 50px;
     text-decoration: underline;
   }
+
   .whole-program {
     color: white;
     text-align: center;
   }
+
   .whole-program:hover {
     color: #ec5242;
   }
+
   .join-our-course-btn-container {
     display: none;
   }
+
   .featured-teachers-h3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     font-family: lato, sans-serif;
     margin-top: 50px;
   }
+
   .card-image {
     width: 150px;
     height: 150px;
@@ -747,6 +664,7 @@ body {
     background-image: url(/images/checker.jpg);
     background-repeat: no-repeat;
   }
+
   .card-image-2 {
     width: 150px;
     height: 150px;
@@ -760,65 +678,68 @@ body {
     background-image: url(/images/colleen-van.jpeg);
     background-repeat: no-repeat;
   }
+
   .card-2 {
     background-image: url(/images/yaakov.jpg);
   }
+
   .card-3 {
     background-image: url(/images/nancy.jpg);
   }
+
   .card-4 {
     background-image: url(/images/emili.jpg);
   }
+
   .card-5 {
     background-image: url(/images/steven.jpg);
   }
+
   .card-6 {
     background-image: url(/images/andrew.jpg);
   }
+
   .body-of-whole-card {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin: auto 200px;
   }
+
   .cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 150px;
   }
+
   .image-content-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .image-content {
     line-height: 0.3;
   }
+
   .name {
     font-family: lato, sans-serif;
   }
+
   .course-taken-h5 {
     font-style: italic;
     font-family: lato, sans-serif;
     color: #ec5242;
     margin-bottom: 13px;
   }
+
   .teacher-hr {
     width: 20px;
     margin: 0;
     padding: 0;
     color: gray;
   }
+
   .teacher-content-para {
     margin-right: 250px;
     margin-top: 25px;
   }
 }
-/*# sourceMappingURL=index.css.map */
