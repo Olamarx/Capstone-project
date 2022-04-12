@@ -1,61 +1,61 @@
 const teachers = [
-    {
-      id: 'card1',
-      name: 'Colleen van Lent Ph.D',
-      title: 'Teacher at Coursera',
-      image: '',
-      description: 'She is a lecturer at School of Information, University of Michigan and she teaches basics of HTML, CSS and Javascript on Coursera',
-      seeLive: '#',
-      seeSource: '#',
-    },
-    {
-      id: 'card2',
-      name: 'Yaakov Chaikin',
-      title: 'Instructor at Coursera',
-      image: '',
-      description: "Each of Yaakov's Coursera courses have made it to be a #1 TOP RATED COURSE on Coursera.org. He lectures at Johns Hopkins University and builds web applications for client/customers in person.",
-      seeLive: '#',
-      seeSource: '#',
-    },
-    {
-      id: 'card3',
-      name: 'Nancy Hughes',
-      title: 'Teaches Web Design in New',
-      image: '',
-      description: 'She has to her credit many designs on figma',
-      seeLive: '#',
-      seeSource: '#',
-    },
-    {
-      id: 'card4',
-      name: 'Emily Brown',
-      title: 'A Michigan CSS expert',
-      image: '',
-      description: 'She takes our student from nothing to something in CSS.',
-      seeLive: '#',
-      seeSource: '#',
-    },
-    {
-      id: 'card5',
-      name: 'Stephen Wright',
-      title: 'CLI expert',
-      image: '',
-      description: 'He uses the command lines on a daily, he has all you need to become a successful Web developer from the angle of CLI.',
-      seeLive: '#',
-      seeSource: '#',
-    },
-    {
-      id: 'card6',
-      name: 'Andrew Brown',
-      title: 'Frontend Developer',
-      image: '',
-      description: 'He was a Google enplyee as a junior developer, now he teaches our student to Google standard.',
-      seeLive: '#',
-      seeSource: '#',
-    },
-  ];
+  {
+    id: 'card1',
+    name: 'Colleen van Lent Ph.D',
+    title: 'Teacher at Coursera',
+    image: '',
+    description: 'She is a lecturer at School of Information, University of Michigan and she teaches basics of HTML, CSS and Javascript on Coursera',
+    seeLive: '#',
+    seeSource: '#',
+  },
+  {
+    id: 'card2',
+    name: 'Yaakov Chaikin',
+    title: 'Instructor at Coursera',
+    image: '',
+    description: "Each of Yaakov's Coursera courses have made it to be a #1 TOP RATED COURSE on Coursera.org. He lectures at Johns Hopkins University and builds web applications for client/customers in person.",
+    seeLive: '#',
+    seeSource: '#',
+  },
+  {
+    id: 'card3',
+    name: 'Nancy Hughes',
+    title: 'Teaches Web Design in New',
+    image: '',
+    description: 'She has to her credit many designs on figma',
+    seeLive: '#',
+    seeSource: '#',
+  },
+  {
+    id: 'card4',
+    name: 'Emily Brown',
+    title: 'A Michigan CSS expert',
+    image: '',
+    description: 'She takes our student from nothing to something in CSS.',
+    seeLive: '#',
+    seeSource: '#',
+  },
+  {
+    id: 'card5',
+    name: 'Stephen Wright',
+    title: 'CLI expert',
+    image: '',
+    description: 'He uses the command lines on a daily, he has all you need to become a successful Web developer from the angle of CLI.',
+    seeLive: '#',
+    seeSource: '#',
+  },
+  {
+    id: 'card6',
+    name: 'Andrew Brown',
+    title: 'Frontend Developer',
+    image: '',
+    description: 'He was a Google enplyee as a junior developer, now he teaches our student to Google standard.',
+    seeLive: '#',
+    seeSource: '#',
+  },
+];
 
-  const featuredTeachers = document.querySelector('.main-curriculum');
+const featuredTeachers = document.querySelector('.main-curriculum');
 
 featuredTeachers.insertAdjacentHTML('afterend', `
 <section class="featured-teacher"> 
@@ -255,4 +255,4 @@ featuredTeachers.insertAdjacentHTML('afterend', `
         </div>
     </div>
 </section>
-`)
+`);

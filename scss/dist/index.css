@@ -84,8 +84,22 @@ body {
   font-size: 20px;
 }
 
+.button-logo i {
+  font-size: 60px;
+}
+
+.header-middle-content li a {
+  color: #d3d3d3;
+  font-family: lato, sans-serif;
+  font-size: 20px;
+}
+
 .top-nav-content i:hover,
 .top-nav-content a:hover {
+  color: #ec5242;
+}
+
+.header-middle-content li a:hover {
   color: #ec5242;
 }
 
@@ -103,9 +117,6 @@ body {
   color: #ec5242;
   background-color: transparent;
 }
-.button-logo i {
-  font-size: 60px;
-}
 
 .logo-name {
   display: flex;
@@ -120,30 +131,20 @@ body {
   margin-top: 70px;
 }
 
-.header-middle-content li a {
-  color: #d3d3d3;
-  font-family: lato, sans-serif;
-  font-size: 20px;
-}
-
-.header-middle-content li a:hover {
-  color: #ec5242;
-}
-
 .campaign-button {
-  padding: 20px auto;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   border: 2px solid grey;
   background-color: transparent;
   color: #faf7f7;
-  padding: 3px 25px;
+  padding: 12px 25px;
   opacity: 0.5;
 }
 
 .campaign-btn-center {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 100px;
 }
 
@@ -168,7 +169,6 @@ body {
 
 .header-text-h1 {
   font-family: cocogoose, sans-serif;
-  color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: content-box;
@@ -218,16 +218,13 @@ body {
   border: none;
 }
 
-.languages {
-  color: white;
-}
-
 .whole-program-container {
   display: none;
 }
 
 .languages {
   display: flex;
+  color: white;
   justify-content: space-between;
   align-items: center;
   margin: auto 80px;
@@ -240,18 +237,14 @@ body {
   border: 2px solid white;
 }
 
-.languages-para {
-  width: 150px;
-  text-align: start;
-  color: #d3d3d3;
-}
-
 .language-h3 {
   font-family: lato, sans-serif;
   color: #ec5242;
 }
 
 .languages-para {
+  text-align: start;
+  width: 150px;
   font-family: lato, sans-serif;
   color: white;
   font-size: 13px;
@@ -286,8 +279,6 @@ body {
 }
 
 .card-image {
-  width: 150px;
-  height: 150px;
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -297,8 +288,6 @@ body {
 }
 
 .card-image-2 {
-  width: 150px;
-  height: 150px;
   margin-top: 25px;
   margin-left: 25px;
   border-radius: 10px;
@@ -390,6 +379,7 @@ body {
   font-size: 30px;
   font-family: lato, sans-serif;
   margin-bottom: 0;
+  color: #faf7f7;
 }
 
 .partner-hr {
@@ -397,10 +387,6 @@ body {
   background-color: #ec5242;
   height: 2px;
   border: none;
-}
-
-.partner-h3 {
-  color: #faf7f7;
 }
 
 .adverts {
@@ -411,6 +397,39 @@ body {
   color: #979494;
   font-family: lato, sans-serif;
   font-size: 15px;
+}
+
+.footer-section {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.right-hand-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: cocogoose, sans-serif;
+  gap: 5px;
+}
+
+.globe-footer {
+  font-size: 40px;
+}
+
+.span-footer {
+  font-size: 10px;
+  font-family: lato, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -462,6 +481,18 @@ body {
     margin-top: 0;
   }
 
+  .top-nav-content a {
+    color: #d3d3d3;
+  }
+
+  .header-middle-content li a {
+    color: #272a31;
+  }
+
+  .top-nav-content a:hover {
+    color: #ec5242;
+  }
+
   .header-middle-content li a:hover {
     color: #ec5242;
   }
@@ -479,10 +510,6 @@ body {
   .logo-name span {
     margin: 0;
     padding: 0;
-  }
-
-  .header-middle-content li a {
-    color: #272a31;
   }
 
   .open-nav {
@@ -503,15 +530,12 @@ body {
     margin-top: 0;
   }
 
+  .campaign-button i {
+    font-size: 20px;
+    margin: 0;
+  }
+
   .top-nav-content i:hover {
-    color: #ec5242;
-  }
-
-  .top-nav-content a {
-    color: #d3d3d3;
-  }
-
-  .top-nav-content a:hover {
     color: #ec5242;
   }
 
@@ -532,12 +556,7 @@ body {
     border: 4px solid #ec5242;
     color: #ec5242;
     font-family: lato, sans-serif;
-    padding: 2px 40px;
-  }
-
-  .campaign-button i {
-    font-size: 20px;
-    margin: 0;
+    padding: 12px 25px;
   }
 
   .bigger-body-bg {
@@ -565,7 +584,6 @@ body {
 
   .header-text-h1 {
     font-family: cocogoose, sans-serif;
-    color: transparent;
     font-size: 80px;
     background-size: cover;
     background-clip: content-box;
@@ -649,19 +667,15 @@ body {
   }
 
   .languages-para {
+    font-family: lato, sans-serif;
     width: 150px;
     text-align: center;
-    color: #d3d3d3;
+    color: white;
   }
 
   .language-h3 {
     font-family: lato, sans-serif;
     color: #ec5242;
-  }
-
-  .languages-para {
-    font-family: lato, sans-serif;
-    color: white;
   }
 
   .whole-program-container {
@@ -692,8 +706,6 @@ body {
   }
 
   .card-image {
-    width: 150px;
-    height: 150px;
     background-size: cover;
     height: 50px;
     width: 50px;
@@ -703,8 +715,6 @@ body {
   }
 
   .card-image-2 {
-    width: 150px;
-    height: 150px;
     margin-top: 25px;
     margin-left: 25px;
     border-radius: 10px;
@@ -795,6 +805,7 @@ body {
     font-size: 30px;
     font-family: lato, sans-serif;
     margin-bottom: 0;
+    color: #faf7f7;
   }
 
   .partner-hr {
@@ -802,10 +813,6 @@ body {
     background-color: #ec5242;
     height: 2px;
     border: none;
-  }
-
-  .partner-h3 {
-    color: #faf7f7;
   }
 
   .adverts {
@@ -816,5 +823,40 @@ body {
     color: #979494;
     font-family: lato, sans-serif;
     font-size: 40px;
+  }
+
+  .footer-section {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0;
+  }
+
+  .right-hand-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: cocogoose, sans-serif;
+    gap: 5px;
+  }
+
+  .globe-footer {
+    font-size: 80px;
+  }
+
+  .span-footer {
+    font-size: 30px;
+    font-family: lato, sans-serif;
   }
 }

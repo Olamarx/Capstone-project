@@ -1,42 +1,39 @@
 const mainCurriculum = [
-    {
-      id: 'card1',
-      font: '<i class="fa fas-brands fa-html5"></i>',
-      name: 'HTML',
-      description: " Hypertext Markup Language is the starting point",
-    },
-    {
-      id: 'card2',
-      font: '<i class="fab fa-css3-alt fa-1x"></i>',
-      name: 'CSS',
-      description: "CSS is known as Cascading Style Sheet and it is responsible for the syling of the site.",
-    },
-    {
-      id: 'card3',
-      font: '<i class="fab fa-js fa-1x"></i>',
-      name: 'Javascript',
-      description: "Javascript is responsible for the functionality and interactiveness of the website.",
-    },
-    {
-      id: 'card4',
-      font: '<i class="fab fa-git-alt fa-1x"></i>',
-      name: 'Git/Github',
-      description: "Learn the usage of Git, a version control system.",
-    },
-    {
-      id: 'card5',
-      font: '<i class="fas fa-terminal fa-1x"></i>',
-      name: 'CLI',
-      description: "CLI is the command line interface. Learn how to use the interface proficiently.",
-    },
-  ];
-  
+  {
+    id: 'card1',
+    font: '<i class="fa fas-brands fa-html5"></i>',
+    name: 'HTML',
+    description: ' Hypertext Markup Language is the starting point',
+  },
+  {
+    id: 'card2',
+    font: '<i class="fab fa-css3-alt fa-1x"></i>',
+    name: 'CSS',
+    description: 'CSS is known as Cascading Style Sheet and it is responsible for the syling of the site.',
+  },
+  {
+    id: 'card3',
+    font: '<i class="fab fa-js fa-1x"></i>',
+    name: 'Javascript',
+    description: 'Javascript is responsible for the functionality and interactiveness of the website.',
+  },
+  {
+    id: 'card4',
+    font: '<i class="fab fa-git-alt fa-1x"></i>',
+    name: 'Git/Github',
+    description: 'Learn the usage of Git, a version control system.',
+  },
+  {
+    id: 'card5',
+    font: '<i class="fas fa-terminal fa-1x"></i>',
+    name: 'CLI',
+    description: 'CLI is the command line interface. Learn how to use the interface proficiently.',
+  },
+];
 
+const afterHeader = document.querySelector('.bigger-body');
 
-
-  const afterHeader = document.querySelector('.bigger-body');
-
-    afterHeader.insertAdjacentHTML('afterend', `
+afterHeader.insertAdjacentHTML('afterend', `
 
     <main class="main-curriculum">
     <div class="main-curriculum-bg">

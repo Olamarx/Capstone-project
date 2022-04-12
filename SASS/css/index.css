@@ -95,8 +95,22 @@ body {
   font-size: 20px;
 }
 
+.button-logo i {
+  font-size: 60px;
+}
+
+.header-middle-content li a {
+  color: #d3d3d3;
+  font-family: lato, sans-serif;
+  font-size: 20px;
+}
+
 .top-nav-content i:hover,
 .top-nav-content a:hover {
+  color: #ec5242;
+}
+
+.header-middle-content li a:hover {
   color: #ec5242;
 }
 
@@ -123,10 +137,6 @@ body {
   background-color: transparent;
 }
 
-.button-logo i {
-  font-size: 60px;
-}
-
 .logo-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,28 +158,20 @@ body {
   margin-top: 70px;
 }
 
-.header-middle-content li a {
-  color: #d3d3d3;
-  font-family: lato, sans-serif;
-  font-size: 20px;
-}
-
-.header-middle-content li a:hover {
-  color: #ec5242;
-}
-
 .campaign-button {
-  padding: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border: 2px solid grey;
   background-color: transparent;
   color: #faf7f7;
-  padding: 3px 25px;
+  padding: 12px 25px;
   opacity: 0.5;
 }
 
@@ -177,9 +179,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 100px;
 }
 
@@ -204,7 +206,6 @@ body {
 
 .header-text-h1 {
   font-family: cocogoose, sans-serif;
-  color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: content-box;
@@ -258,10 +259,6 @@ body {
   border: none;
 }
 
-.languages {
-  color: white;
-}
-
 .whole-program-container {
   display: none;
 }
@@ -270,6 +267,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: white;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -286,18 +284,14 @@ body {
   border: 2px solid white;
 }
 
-.languages-para {
-  width: 150px;
-  text-align: start;
-  color: #d3d3d3;
-}
-
 .language-h3 {
   font-family: lato, sans-serif;
   color: #ec5242;
 }
 
 .languages-para {
+  text-align: start;
+  width: 150px;
   font-family: lato, sans-serif;
   color: white;
   font-size: 13px;
@@ -340,8 +334,6 @@ body {
 }
 
 .card-image {
-  width: 150px;
-  height: 150px;
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -351,8 +343,6 @@ body {
 }
 
 .card-image-2 {
-  width: 150px;
-  height: 150px;
   margin-top: 25px;
   margin-left: 25px;
   border-radius: 10px;
@@ -463,6 +453,7 @@ body {
   font-size: 30px;
   font-family: lato, sans-serif;
   margin-bottom: 0;
+  color: #faf7f7;
 }
 
 .partner-hr {
@@ -470,10 +461,6 @@ body {
   background-color: #ec5242;
   height: 2px;
   border: none;
-}
-
-.partner-h3 {
-  color: #faf7f7;
 }
 
 .adverts {
@@ -487,6 +474,58 @@ body {
   color: #979494;
   font-family: lato, sans-serif;
   font-size: 15px;
+}
+
+.footer-section {
+  height: 30vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.right-hand-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-family: cocogoose, sans-serif;
+  gap: 5px;
+}
+
+.globe-footer {
+  font-size: 40px;
+}
+
+.span-footer {
+  font-size: 10px;
+  font-family: lato, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -550,6 +589,15 @@ body {
     font-family: lato, sans-serif;
     margin-top: 0;
   }
+  .top-nav-content a {
+    color: #d3d3d3;
+  }
+  .header-middle-content li a {
+    color: #272a31;
+  }
+  .top-nav-content a:hover {
+    color: #ec5242;
+  }
   .header-middle-content li a:hover {
     color: #ec5242;
   }
@@ -573,9 +621,6 @@ body {
     margin: 0;
     padding: 0;
   }
-  .header-middle-content li a {
-    color: #272a31;
-  }
   .open-nav {
     display: none;
   }
@@ -595,13 +640,11 @@ body {
     font-weight: 500;
     margin-top: 0;
   }
+  .campaign-button i {
+    font-size: 20px;
+    margin: 0;
+  }
   .top-nav-content i:hover {
-    color: #ec5242;
-  }
-  .top-nav-content a {
-    color: #d3d3d3;
-  }
-  .top-nav-content a:hover {
     color: #ec5242;
   }
   .center-btn-logo {
@@ -627,11 +670,7 @@ body {
     border: 4px solid #ec5242;
     color: #ec5242;
     font-family: lato, sans-serif;
-    padding: 2px 40px;
-  }
-  .campaign-button i {
-    font-size: 20px;
-    margin: 0;
+    padding: 12px 25px;
   }
   .bigger-body-bg {
     background-size: cover;
@@ -654,7 +693,6 @@ body {
   }
   .header-text-h1 {
     font-family: cocogoose, sans-serif;
-    color: transparent;
     font-size: 80px;
     background-size: cover;
     background-clip: content-box;
@@ -744,17 +782,14 @@ body {
     width: 45%;
   }
   .languages-para {
+    font-family: lato, sans-serif;
     width: 150px;
     text-align: center;
-    color: #d3d3d3;
+    color: white;
   }
   .language-h3 {
     font-family: lato, sans-serif;
     color: #ec5242;
-  }
-  .languages-para {
-    font-family: lato, sans-serif;
-    color: white;
   }
   .whole-program-container {
     display: -webkit-box;
@@ -787,8 +822,6 @@ body {
     margin-top: 50px;
   }
   .card-image {
-    width: 150px;
-    height: 150px;
     background-size: cover;
     height: 50px;
     width: 50px;
@@ -797,8 +830,6 @@ body {
     background-repeat: no-repeat;
   }
   .card-image-2 {
-    width: 150px;
-    height: 150px;
     margin-top: 25px;
     margin-left: 25px;
     border-radius: 10px;
@@ -892,15 +923,13 @@ body {
     font-size: 30px;
     font-family: lato, sans-serif;
     margin-bottom: 0;
+    color: #faf7f7;
   }
   .partner-hr {
     width: 50px;
     background-color: #ec5242;
     height: 2px;
     border: none;
-  }
-  .partner-h3 {
-    color: #faf7f7;
   }
   .adverts {
     display: -webkit-box;
@@ -914,6 +943,57 @@ body {
     color: #979494;
     font-family: lato, sans-serif;
     font-size: 40px;
+  }
+  .footer-section {
+    height: 30vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0;
+  }
+  .right-hand-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+    font-family: cocogoose, sans-serif;
+    gap: 5px;
+  }
+  .globe-footer {
+    font-size: 80px;
+  }
+  .span-footer {
+    font-size: 30px;
+    font-family: lato, sans-serif;
   }
 }
 /*# sourceMappingURL=index.css.map */
