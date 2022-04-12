@@ -53,9 +53,7 @@ body {
 .open-nav {
   font-size: 30px;
   margin: 20px;
-  // position: fixed;
   display: flex;
-  // z-index: 20;
 }
 
 .open-nav.active {
@@ -67,13 +65,8 @@ body {
   font-size: 20px;
   color: $hover-color;
   justify-content: end;
-  // font-size: 30px;
   margin: 0;
 }
-
-// .close-nav.active {
-//   display: none;
-// }
 
 .time-put-up {
   margin: 20px 20px 0 0;
@@ -342,11 +335,8 @@ body {
 }
 
 .body-of-whole-card {
-  // height: 50vh;
   display: grid;
-  // width: 50%;
   grid-template-columns: 1fr;
-  // justify-items: center;
   margin: auto 2px;
 }
 
@@ -381,15 +371,12 @@ body {
   width: 20px;
   margin: 0;
   padding: 0;
-  // border: none;
-  // height: 5px;
   color: gray;
 }
 
 .teacher-content-para {
   margin-right: 150px;
   margin-top: 50px;
-  // background-color: green;
 }
 
 .partner-content {
@@ -471,11 +458,9 @@ body {
     width: 100%;
     height: 80px;
     z-index: 5;
-    // position: fixed;
   }
 
   .whole-body-nav {
-    // position: fixed;
     width: 100%;
     height: 40px;
   }
@@ -552,7 +537,6 @@ body {
 
   .top-nav-content {
     margin-right: 100px;
-    // border: 2px solid green;
     display: flex;
     gap: 40px;
     align-items: center;
@@ -778,9 +762,7 @@ body {
   }
 
   .body-of-whole-card {
-    // height: 50vh;
     display: grid;
-    // width: 50%;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin: auto 200px;
@@ -794,7 +776,6 @@ body {
   .image-content-body {
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
   }
 
   .image-content {
@@ -816,8 +797,6 @@ body {
     width: 20px;
     margin: 0;
     padding: 0;
-    // border: none;
-    // height: 5px;
     color: gray;
   }
 
