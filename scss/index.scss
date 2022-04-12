@@ -216,7 +216,7 @@ font-family: $font2;
 
 .main-curriculum-bg {
   background-size: cover;
-  height: 100vh;
+  height: 75vh;
   width: 100%;
   background-position: top;
   background-image: url(/images/curriculum-bg.jpg);
@@ -258,12 +258,18 @@ font-family: $font2;
   margin: auto 80px;
   background-color: rgba(82, 81, 81, 0.7);
   margin-top: 10px;
-  padding: 10px;
+  padding: 1px;
 }
+
+
+.languages:hover {
+border: 2px solid white;
+}
+
 
 .languages-para {
   width: 150px;
-  text-align: center;
+  text-align: start;
   color: $primary-white-color;
 }
 
@@ -275,17 +281,29 @@ font-family: $font2;
 .languages-para {
   font-family: $font2;
   color: white;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .font-for-lang {
-  font-size: 40px;
+  font-size: 50px;
   color: $hover-color;
 }
 
+.join-our-course-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
 
-
-
+.join-our-course {
+  font-size: 20px;
+  font-family: $font2;
+  width: 70%;
+  height: 50px;
+  background-color: $hover-color;
+  border: none;
+  color: $primary-white-color;
+}
 
 
 
@@ -575,12 +593,14 @@ font-family: $font2;
     background-color: white;
   margin: 0% 50% 3% 10%;
   font-family: $font2;
+  overflow: hidden;
   }
 
   .next-class-date {
     font-family: $font1;
     font-size: 40px;
     opacity: 0.7;
+  overflow: hidden;
   }
 
 
@@ -624,7 +644,8 @@ font-family: $font2;
     flex-direction: column;
     align-items: center;
     padding: 0;
-    margin-top: 1px;
+    margin: 0;
+    margin-top: 5px;
   }
 
   .languages:hover {
@@ -680,7 +701,9 @@ font-family: $font2;
 }
 
 
-
+.join-our-course-btn-container {
+  display: none;
+}
 
 
 

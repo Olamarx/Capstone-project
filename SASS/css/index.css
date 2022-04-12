@@ -227,7 +227,7 @@ body {
 
 .main-curriculum-bg {
   background-size: cover;
-  height: 100vh;
+  height: 75vh;
   width: 100%;
   background-position: top;
   background-image: url(/images/curriculum-bg.jpg);
@@ -279,12 +279,16 @@ body {
   margin: auto 80px;
   background-color: rgba(82, 81, 81, 0.7);
   margin-top: 10px;
-  padding: 10px;
+  padding: 1px;
+}
+
+.languages:hover {
+  border: 2px solid white;
 }
 
 .languages-para {
   width: 150px;
-  text-align: center;
+  text-align: start;
   color: #d3d3d3;
 }
 
@@ -296,12 +300,32 @@ body {
 .languages-para {
   font-family: lato, sans-serif;
   color: white;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .font-for-lang {
-  font-size: 40px;
+  font-size: 50px;
   color: #ec5242;
+}
+
+.join-our-course-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.join-our-course {
+  font-size: 20px;
+  font-family: lato, sans-serif;
+  width: 70%;
+  height: 50px;
+  background-color: #ec5242;
+  border: none;
+  color: #d3d3d3;
 }
 
 @media screen and (min-width: 768px) {
@@ -483,11 +507,13 @@ body {
     background-color: white;
     margin: 0% 50% 3% 10%;
     font-family: lato, sans-serif;
+    overflow: hidden;
   }
   .next-class-date {
     font-family: cocogoose, sans-serif;
     font-size: 40px;
     opacity: 0.7;
+    overflow: hidden;
   }
   .main-curriculum-bg {
     background-size: cover;
@@ -530,7 +556,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
-    margin-top: 1px;
+    margin: 0;
+    margin-top: 5px;
   }
   .languages:hover {
     border: 2px solid white;
@@ -584,6 +611,9 @@ body {
   }
   .whole-program:hover {
     color: #ec5242;
+  }
+  .join-our-course-btn-container {
+    display: none;
   }
 }
 /*# sourceMappingURL=index.css.map */

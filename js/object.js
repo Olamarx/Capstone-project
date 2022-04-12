@@ -86,6 +86,11 @@ const mainCurriculum = [
 <div class="whole-program-container">
             <a href="#" class="whole-program"> SEE THE WHOLE PROGRAMME</a>
            </div>
+           <div class="join-our-course-btn-container">
+    <button class="join-our-course">
+        Join our course for 2022
+    </button>
+</div>
         
     </div>
 </main>
