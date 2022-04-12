@@ -227,11 +227,81 @@ body {
 
 .main-curriculum-bg {
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   background-position: top;
   background-image: url(/images/curriculum-bg.jpg);
   background-repeat: no-repeat;
+}
+
+.body-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+
+.main-curriculum-h3 {
+  color: white;
+  font-family: lato, sans-serif;
+  font-size: 30px;
+}
+
+.hr {
+  width: 50px;
+  background-color: #ec5242;
+  height: 2px;
+  opacity: 0.9;
+  border: none;
+}
+
+.languages {
+  color: white;
+}
+
+.whole-program-container {
+  display: none;
+}
+
+.languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 80px;
+  background-color: rgba(82, 81, 81, 0.7);
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.languages-para {
+  width: 150px;
+  text-align: center;
+  color: #d3d3d3;
+}
+
+.language-h3 {
+  font-family: lato, sans-serif;
+  color: #ec5242;
+}
+
+.languages-para {
+  font-family: lato, sans-serif;
+  color: white;
+  font-size: 10px;
+}
+
+.font-for-lang {
+  font-size: 40px;
+  color: #ec5242;
 }
 
 @media screen and (min-width: 768px) {
@@ -411,7 +481,7 @@ body {
   }
   .header-text-para {
     background-color: white;
-    padding: 8px 950px 0 150px;
+    margin: 0% 50% 3% 10%;
     font-family: lato, sans-serif;
   }
   .next-class-date {
@@ -421,11 +491,99 @@ body {
   }
   .main-curriculum-bg {
     background-size: cover;
-    height: 40vh;
+    height: 55vh;
     width: 100%;
     background-position: top;
     background-image: url(/images/curriculum-bg.jpg);
     background-repeat: no-repeat;
+  }
+  .body-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+  }
+  .main-curriculum-h3 {
+    color: white;
+    font-family: lato, sans-serif;
+    font-size: 30px;
+  }
+  .hr {
+    width: 50px;
+    background-color: #ec5242;
+    height: 2px;
+    border: none;
+  }
+  .languages {
+    background-color: rgba(82, 81, 81, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin-top: 1px;
+  }
+  .languages:hover {
+    border: 2px solid white;
+  }
+  .font-for-lang {
+    font-size: 60px;
+    color: #ec5242;
+  }
+  .center-lang-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .languages-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 45%;
+  }
+  .languages-para {
+    width: 150px;
+    text-align: center;
+    color: #d3d3d3;
+  }
+  .language-h3 {
+    font-family: lato, sans-serif;
+    color: #ec5242;
+  }
+  .languages-para {
+    font-family: lato, sans-serif;
+    color: white;
+  }
+  .whole-program-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+    text-decoration: underline;
+  }
+  .whole-program {
+    color: white;
+    text-align: center;
+  }
+  .whole-program:hover {
+    color: #ec5242;
   }
 }
 /*# sourceMappingURL=index.css.map */
