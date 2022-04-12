@@ -288,7 +288,6 @@ body {
 .card-image {
   width: 150px;
   height: 150px;
-  background-color: green;
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -340,6 +339,7 @@ body {
 .cards {
   display: flex;
   gap: 30%;
+  margin-top: 30px;
 }
 
 .image-content-body {
@@ -372,7 +372,45 @@ body {
 
 .teacher-content-para {
   margin-right: 150px;
-  margin-top: 16px;
+  margin-top: 50px;
+}
+
+.partner-content {
+  height: 20vh;
+  width: 100%;
+  background-color: #272a31;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-h3 {
+  font-size: 30px;
+  font-family: lato, sans-serif;
+  margin-bottom: 0;
+}
+
+.partner-hr {
+  width: 50px;
+  background-color: #ec5242;
+  height: 2px;
+  border: none;
+}
+
+.partner-h3 {
+  color: #faf7f7;
+}
+
+.adverts {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-top: 20px;
+  color: #979494;
+  font-family: lato, sans-serif;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -656,7 +694,6 @@ body {
   .card-image {
     width: 150px;
     height: 150px;
-    background-color: green;
     background-size: cover;
     height: 50px;
     width: 50px;
@@ -741,5 +778,43 @@ body {
   .teacher-content-para {
     margin-right: 250px;
     margin-top: 25px;
+  }
+
+  .partner-content {
+    height: 20vh;
+    width: 100%;
+    background-color: #272a31;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partner-h3 {
+    font-size: 30px;
+    font-family: lato, sans-serif;
+    margin-bottom: 0;
+  }
+
+  .partner-hr {
+    width: 50px;
+    background-color: #ec5242;
+    height: 2px;
+    border: none;
+  }
+
+  .partner-h3 {
+    color: #faf7f7;
+  }
+
+  .adverts {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 10px;
+    color: #979494;
+    font-family: lato, sans-serif;
+    font-size: 40px;
   }
 }
