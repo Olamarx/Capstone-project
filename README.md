@@ -16,15 +16,25 @@
 </p>
 
 # Microverse' First Capstone Project
+> The project is about Olamarx's Web Development Course. The website gives information about the course, the languages you can learn, when the classes start, and features some of the teachers that will take the students.
 
-> ### This project is a capstone project at Microverse and it is reopnsive. It is responsive for the mobile version and the desktop version.\
+
+> The about-page can be accessed from the homepage with the 'About' link.
+> The homepage can be accessed from the main logo, or the 'home' icon on the about-page.
+> Also, on the mobile version, both these pages can be accessed through the 'hamburger menu'.
+
+
+> This is my first capstone project at Microverse.
 ## The project template was gotten from [Behabce](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) and it is a product of Creative Commons.
 
 ## Built by Olaoluwa Owoeye (Olamarx)
 
 - HTML
-- CSS
-- Javascript
+- CSS/Sass
+  - Flexbox
+  - Grid
+  - mobile-first method
+- JavaScript
 
 ## Live Demo
 
@@ -57,3 +67,15 @@ Feel free to check the [issues page](https://github.com/Olamarx/Microverse-Portf
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+- Original design idea by <a href="https://www.behance.net/adagio07">Cindy Shin in Behance</a>.
+- Image condent from <a href="https://www.behance.net/adagio07">Virag's Github</a>.
+
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
