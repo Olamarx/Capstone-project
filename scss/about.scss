@@ -55,7 +55,6 @@ body {
   height: 100vh;
   margin-top: 70px;
   width: 100vw;
-//   background-position: top;
   background-image: url(/images/about-dektop.png);
   background-repeat: no-repeat;
 }
@@ -109,12 +108,14 @@ color: $hover-color;
 
 
 .paragraph-card {
-    margin: auto 60px;
-    margin-top: 40px;
-    padding: 10px 15px 0px 15px;
+    // margin: auto 60px;
+    // margin-top: 40px;
+    // padding: 10px 15px 0px 15px;
     
-    border-left:   2px solid #f3f0f0;
-    border-right:  2px solid #f3f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .para {
@@ -122,6 +123,9 @@ color: $hover-color;
     font-family: $font2;
     text-align: justify;
     line-height: 1.5;
+    width: 70%;
+    border-left:   2px solid #f3f0f0;
+    border-right:  2px solid #f3f0f0;
 }
 
 .email {
@@ -140,11 +144,12 @@ color: $hover-color;
 }
 
 .development {
-    margin-top: 400px;
+    // padding-top: 400px;
     text-align: center;
     font-family: $font2;
-    font-size: 30px;
+    font-size: 1rem;
     font-weight: 500;
+    margin: 10px 0;
 }
 
 
@@ -152,10 +157,36 @@ color: $hover-color;
 .logo-decide {
     text-align: center;
     font-family: $font2;
+    margin: 10px 40px;
     font-size: 15px;
     font-weight: 500;
 }
 
+.font-logo-container {
+    padding: 50px;
+    width: 15%;
+
+    border-left:   10px solid #f3f0f0;
+    border-right:  10px solid #f3f0f0;
+    // border: 10px solid green;
+}
+
+.font-container-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.about-globe {
+    font-size: 50px;
+    color: $hover-color;
+}
+
+.web-dev {
+    font-size: 20px;
+    font-family: $font2;
+}
 
 .aboutright-hand {
     margin: auto 700px;
@@ -183,39 +214,17 @@ color: $hover-color;
     font-family: $font2;
     display: flex;
     justify-content: center;
-}
-
-.overlay {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: rgba(red, green, blue, opacity);;
-}
-
-.overlay img {
-    display: block;
-    width: 200px;
-    height: 200px;
+    margin-bottom: 100px;
 }
 
 
-.overlay2021 {
-width: 300px;
-height: 200px;
-position: fixed;
-top: 40%;
-left: 50%;
-margin-top: -100px;
-margin-left: -150px;
-background-color: blue;
-z-index: 11;
+.the-overlay-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    clear: both;
+
 }
-// .overlay .after
-
-
 
 
 
@@ -319,7 +328,6 @@ z-index: 11;
       background-position: 0% 35%;
       background-image: url(/images/about-dektop.png);
       background-repeat: no-repeat;
-    //   margin: 50px;
     }
 
 
@@ -367,27 +375,26 @@ z-index: 11;
         }
 
 
-        .paragraph-card {
-            // margin-top: 30px;
-            margin: auto 300px;
-            padding: 10px 1px 0px 1px;
-            display: flex;
-            // justify-content: center;
-            
-            border-left:   2px solid #f3f0f0;
-            border-right:  2px solid #f3f0f0;
+        .paragraph-card {            
+         display: flex;
+         align-items: center;
+         justify-content: center;
         }
         
         .para {
             letter-spacing: 1px;
             font-family: $font2;
-            text-align: start;
-            line-height: 1.8;
-            // margin: auto 400px;
+            text-align: center;
+            line-height: 2;
+    
+            border-left:   2px solid #f3f0f0;
+            border-right:  2px solid #f3f0f0;
+            width: 40vw;
+            he
         }
         
 .paragraph-card-container {
-    margin: auto 200px;
+    margin: auto 0px;
 }
 
         .email {
@@ -409,7 +416,7 @@ z-index: 11;
 
 
         .development {
-            margin-top: 400px;
+            // margin-top: 400px;
             text-align: center;
             font-family: $font2;
             font-size: 30px;
@@ -452,8 +459,11 @@ z-index: 11;
             font-family: $font2;
             display: flex;
             justify-content: center;
+            padding-bottom: 100px;
         }
         
+
+     
 
 
 
