@@ -1,28 +1,38 @@
 ## Desktop Version of the site
-![This is an image](./images/destop.jpg)
+  <img
+  src="./images/desktop-version.jpg"
+  alt="Desktop Version"
+  >
 
 ## Mobile Version of the site
-![This is an image](./images/mobile.jpg)
+  <img 
+  align="center"
+  src="/images/mobile-version.jpg"
+  alt="Mobile Version"
+  >
 
-#  Microverse' Portfolio Project
 
-> ### This project is my portfolio project at Microverse and it aims at making me have a reopnsive webpag. It is responsive for the mobile version and the desktop version.
+# Microverse' First Capstone Project
 
+> ### This project is a capstone project at Microverse and it is reopnsive. It is responsive for the mobile version and the desktop version.\
+## The project template was gotten from [Behabce](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) and it is a product of Creative Commons.
 
+https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 ## Built by Olaoluwa Owoeye (Olamarx)
 
 - HTML
 - CSS
+- Javascript
 
 ## Live Demo
 
-[Live Demo Link](https://olamarx.github.io/Olamarx-portfolio/)
+[Live Demo Link](https://olamarx.github.io/Capstone-project/)
 
 ## Set-up linters in your local machine
 
 ## Getting Started
 
-#### run "git clone https://github.com/Olamarx/Microverse-Portfolio-setup.git"
+#### run "git clone https://github.com/Olamarx/Capstone-project.git"
 
 #### Kindly don't run the quotation mark with it.
 
