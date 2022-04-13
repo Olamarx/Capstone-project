@@ -35,14 +35,10 @@ body {
   overflow-x: hidden;
 }
 
-.open-nav {
+.open-menu-nav {
   font-size: 30px;
   margin: 20px;
-  display: flex;
-}
-
-.open-nav.active {
-  display: flex;
+  display: inline-flex;
 }
 
 .close-nav {
@@ -150,8 +146,8 @@ body {
 
 .bigger-body-bg {
   background-size: cover;
-  height: 554px;
-  margin-top: 0;
+  height: 600px;
+  margin-top: -70px;
   width: 100%;
   background-position: top;
   background-image: url(/images/background.png);
@@ -191,7 +187,7 @@ body {
 
 .main-curriculum-bg {
   background-size: cover;
-  height: 75vh;
+  height: 100vh;
   width: 100%;
   background-position: top;
   background-image: url(/images/curriculum-bg.jpg);
@@ -202,6 +198,7 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  align-items: center;
 }
 
 .main-curriculum-h3 {
@@ -224,6 +221,7 @@ body {
 
 .languages {
   display: flex;
+  gap: 10px;
   color: white;
   justify-content: space-between;
   align-items: center;
@@ -240,6 +238,7 @@ body {
 .language-h3 {
   font-family: lato, sans-serif;
   color: #ec5242;
+  font-size: 15px;
 }
 
 .languages-para {
@@ -360,7 +359,7 @@ body {
 }
 
 .teacher-content-para {
-  margin-right: 150px;
+  margin-right: 50px;
   margin-top: 50px;
 }
 
@@ -433,6 +432,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .open-menu-nav {
+    display: none;
+  }
+
   .header-content {
     display: flex;
     justify-content: space-around;
@@ -606,6 +609,7 @@ body {
     font-size: 40px;
     opacity: 0.7;
     overflow: hidden;
+    margin-bottom: 0px;
   }
 
   .main-curriculum-bg {
@@ -657,13 +661,13 @@ body {
 
   .center-lang-body {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .languages-body {
     display: flex;
     justify-content: space-around;
-    width: 45%;
+    width: 60%;
   }
 
   .languages-para {
@@ -786,7 +790,7 @@ body {
   }
 
   .teacher-content-para {
-    margin-right: 250px;
+    margin-right: 50px;
     margin-top: 25px;
   }
 

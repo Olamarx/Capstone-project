@@ -21,7 +21,7 @@ var teachers = [{
   name: 'Nancy Hughes',
   title: 'Teaches Web Design in New',
   image: '',
-  description: 'She has to her credit many designs on figma',
+  description: 'She has to her credit many designs on figma. She has also taught many successful Web Designers',
   seeLive: '#',
   seeSource: '#'
 }, {
@@ -29,7 +29,7 @@ var teachers = [{
   name: 'Emily Brown',
   title: 'A Michigan CSS expert',
   image: '',
-  description: 'She takes our student from nothing to something in CSS.',
+  description: 'She takes our student from nothing to something in CSS. By nothing to nothing, she ensures that you get the skill to that of the international standard.',
   seeLive: '#',
   seeSource: '#'
 }, {

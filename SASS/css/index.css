@@ -35,18 +35,12 @@ body {
   overflow-x: hidden;
 }
 
-.open-nav {
+.open-menu-nav {
   font-size: 30px;
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.open-nav.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .close-nav {
@@ -187,8 +181,8 @@ body {
 
 .bigger-body-bg {
   background-size: cover;
-  height: 554px;
-  margin-top: 0;
+  height: 600px;
+  margin-top: -70px;
   width: 100%;
   background-position: top;
   background-image: url(/images/background.png);
@@ -228,7 +222,7 @@ body {
 
 .main-curriculum-bg {
   background-size: cover;
-  height: 75vh;
+  height: 100vh;
   width: 100%;
   background-position: top;
   background-image: url(/images/curriculum-bg.jpg);
@@ -243,6 +237,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-curriculum-h3 {
@@ -267,6 +264,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10px;
   color: white;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -287,6 +285,7 @@ body {
 .language-h3 {
   font-family: lato, sans-serif;
   color: #ec5242;
+  font-size: 15px;
 }
 
 .languages-para {
@@ -425,7 +424,7 @@ body {
 }
 
 .teacher-content-para {
-  margin-right: 150px;
+  margin-right: 50px;
   margin-top: 50px;
 }
 
@@ -529,6 +528,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .open-menu-nav {
+    display: none;
+  }
   .header-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -713,6 +715,7 @@ body {
     font-size: 40px;
     opacity: 0.7;
     overflow: hidden;
+    margin-bottom: 0px;
   }
   .main-curriculum-bg {
     background-size: cover;
@@ -769,9 +772,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .languages-body {
     display: -webkit-box;
@@ -779,7 +781,7 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 45%;
+    width: 60%;
   }
   .languages-para {
     font-family: lato, sans-serif;
@@ -897,7 +899,7 @@ body {
     color: gray;
   }
   .teacher-content-para {
-    margin-right: 250px;
+    margin-right: 50px;
     margin-top: 25px;
   }
   .partner-content {

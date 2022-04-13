@@ -53,7 +53,7 @@ body {
 .about-bigger-body-bg {
     background-size: contain;
 //   height: 100px;
-  margin-top: 70px;
+  margin-top: -70px;
   height: inherit;
   width: 100vw;
   background-image: url(/images/about-dektop.png);
@@ -75,7 +75,7 @@ margin: auto auto;
 .about-h1-container {
     display: flex;
     // flex-direction: column;
-    margin-top: 0px;
+    margin-top: 100px;
     justify-content: center;
 }
 
