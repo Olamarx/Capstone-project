@@ -51,8 +51,7 @@ body {
 }
 
 .about-bigger-body-bg {
-    background-size: contain;
-//   height: 100px;
+  background-size: contain;
   margin-top: -70px;
   height: inherit;
   width: 100vw;
@@ -60,539 +59,352 @@ body {
   background-repeat: no-repeat;
 }
 
-.home-container{
-height: 10px;
-width: 70%;
-margin: auto auto;
-// background-color: green;
+.home-container {
+  height: 10px;
+  width: 70%;
+  margin: auto auto;
 }
 
-
 .home-section {
-    display: none;
+  display: none;
 }
 
 .about-h1-container {
-    display: flex;
-    // flex-direction: column;
-    margin-top: 100px;
-    justify-content: center;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
 }
 
 .h3-first-hide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-text-h3 {
-    margin: 10px;
-    font-weight: 300;
+  margin: 10px;
+  font-weight: 300;
 }
 
 .about-web-cour {
-// width: 70%;
-font-size: 20px;
-// text-align: center;
-font-family: $font1;
-color: $hover-color;
-
+  font-size: 20px;
+  font-family: $font1;
+  color: $hover-color;
 }
 
 .about-first-hr {
+  width: 50px;
+  background-color: $hover-color;
+  height: 2px;
+  border: none;
+}
+
+.paragraph-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.para {
+  letter-spacing: 1.5px;
+  font-family: $font2;
+  text-align: justify;
+  line-height: 1.5;
+  width: 75%;
+  border-left: 2px solid #f3f0f0;
+  border-right: 2px solid #f3f0f0;
+  background-color: white;
+}
+
+.email {
+  text-align: center;
+  font-family: $font2;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.small-email {
+  text-align: center;
+  font-family: $font2;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.development {
+  padding-top: 100px;
+  text-align: center;
+  font-family: $font1;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.logo-decide {
+  text-align: center;
+  font-family: $font2;
+  margin: 10px 40px;
+  margin-top: 70px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.font-logo-container {
+  display: flex;
+  padding: 50px;
+  gap: 5px;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  background-color: white;
+  border-left: 1px solid #f3f0f0;
+  border-right: 1px solid #f3f0f0;
+}
+
+.font-container-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.about-globe {
+  font-size: 30px;
+  color: $hover-color;
+}
+
+.web-dev {
+  font-size: 10px;
+  font-family: $font2;
+}
+
+.aboutright-hand {
+  margin: 10px 700px;
+  margin-top: 40px;
+  padding: 10px 15px 0 15px;
+  border-left: 2px solid #f3f0f0;
+  border-right: 2px solid #f3f0f0;
+  height: 300px;
+}
+
+.globe-footer {
+  color: $primary-dark-color;
+}
+
+.student-of-school {
+  font-family: $font1;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 100px;
+}
+
+.take-a-look {
+  margin-top: 100px;
+  font-family: $font2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 0 60px;
+}
+
+.overlay-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.overlay-container img {
+  width: 50%;
+}
+
+.partner-h3 {
+  font-size: 25px;
+}
+
+.footer-section {
+  background-color: transparent;
+  color: $primary-dark-color;
+  height: 180px;
+}
+
+@media screen  and (min-width: 768px) {
+  .about-bigger-body-bg {
+    background-size: contain;
+    margin-top: 50px;
+    width: 100vw;
+    height: initial;
+    background-position: 0% 35%;
+    background-image: url(/images/about-dektop.png);
+    background-repeat: no-repeat;
+  }
+
+  .home-container {
+    height: 10px;
+    width: 70%;
+    margin: 10px 00;
+  }
+
+  .home-section {
+    display: block;
+    float: right;
+    font-size: 20px;
+    color: $hover-color;
+  }
+
+  .about-h1-container {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+  }
+
+  .header-text-h3 {
+    display: none;
+  }
+
+  .about-web-cour {
+    width: 100%;
+    font-size: 80px;
+    text-align: center;
+    font-family: $font1;
+    color: $hover-color;
+  }
+
+  .about-first-hr {
     width: 50px;
     background-color: $hover-color;
     height: 2px;
     border: none;
-}
+  }
 
-
-.paragraph-card {
+  .paragraph-card {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.para {
-    letter-spacing: 1.5px;
+  .para {
+    letter-spacing: 1px;
     font-family: $font2;
-    text-align: justify;
-    line-height: 1.5;
-    width: 75%;
-    border-left:   2px solid #f3f0f0;
-    border-right:  2px solid #f3f0f0;
-    background-color: white;
-}
+    text-align: center;
+    line-height: 2;
+    border-left: 2px solid #f3f0f0;
+    border-right: 2px solid #f3f0f0;
+    width: 40vw;
+  }
 
-.email {
+  .paragraph-card-container {
+    margin: auto 0;
+  }
+
+  .email {
     text-align: center;
     font-family: $font2;
     font-weight: 500;
     font-size: 20px;
-}
+  }
 
-.small-email {
+  .small-email {
     text-align: center;
     font-family: $font2;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
     text-decoration: underline;
-}
+  }
 
-.development {
-    padding-top: 100px;
-    text-align: center;
-    font-family: $font1;
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0;
-}
+  .web-dev {
+    font-size: 20px;
+    font-family: $font2;
+  }
 
-.logo-decide {
+  .about-globe {
+    font-size: 70px;
+    color: $hover-color;
+  }
+
+  .development {
     text-align: center;
     font-family: $font2;
-    margin: 10px 40px;
-    margin-top: 70px;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.font-logo-container {
-    display: flex;
-    padding: 50px;
-gap: 5px;
-    align-items: center;
-width: 70%;
-justify-content: center;
-background-color: white;
-    border-left:   1px solid #f3f0f0;
-    border-right:  1px solid #f3f0f0;
-    // border: 10px solid green
-}
-
-.font-container-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
-.about-globe {
     font-size: 30px;
-    color: $hover-color;
-}
+    font-weight: 500;
+    margin-top: 350px;
+  }
 
-.web-dev {
-    font-size: 10px;
+  .logo-decide {
+    text-align: center;
     font-family: $font2;
-}
-
-.aboutright-hand {
-    margin: 10px 700px;
+    font-size: 15px;
+    font-weight: 500;
     margin-top: 40px;
-    padding: 10px 15px 0px 15px;
-    
-    border-left:   2px solid #f3f0f0;
-    border-right:  2px solid #f3f0f0;
+  }
+
+  .aboutright-hand {
+    margin: auto 700px;
+    margin-top: 40px;
+    padding: 10px 15px 0 15px;
+    border-left: 2px solid #f3f0f0;
+    border-right: 2px solid #f3f0f0;
     height: 300px;
-}
+  }
 
-.globe-footer {
-    color: $hover-color;
-}
+  .font-logo-container {
+    display: flex;
+    grid-template-columns: 5px;
+    padding: 50px;
+    width: 15%;
+    margin: 200px 0;
+    margin-top: 50px;
+    border-left: 1px solid #f3f0f0;
+    border-right: 1px solid #f3f0f0;
+  }
 
-.student-of-school {
+  .student-of-school {
     font-family: $font1;
     display: flex;
     justify-content: center;
-    font-size: 15px;
-    margin-top: 100px;
-    
-}
+    font-size: 20px;
+  }
 
-.take-a-look {
-    margin-top: 100px;
+  .take-a-look {
     font-family: $font2;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    text-align: center;
-    padding: 0 60px;
-    
-}
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
 
-
-.overlay-container {
+  .overlay-container {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.footer-section {
-    background-color: $primary-dark-color;
-    color: $primary-white-color;
-}
-.globe-footer{
-    color: $primary-white-color;
-}
-
-
-.overlay-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
-}
+    margin-bottom: 200px;
+  }
 
-.overlay-container img {
-    width: 50%;
-}
+  .overlay-container img {
+    width: 25%;
+  }
 
-.partner-h3 {
-    font-size: 25px;
-}
-
-.footer-section {
-    background-color: transparent;
-    color: $primary-dark-color;
-    height: 180px;
-}
-
-.globe-footer {
-    color: $primary-dark-color;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen  and (min-width: 768px) {
-
-    .about-bigger-body-bg {
-        background-size: contain;
-        margin-top: 50px;
-        width: 100vw;
-        height: initial;
-        background-position: 0% 35%;
-        background-image: url(/images/about-dektop.png);
-        background-repeat: no-repeat;
-    }
-
-
-
-
-    .home-container{
-        height: 10px;
-        width: 70%;
-        margin: 10px 00px;
-        }
-        
-        
-        .home-section {
-    display: block;
-            float: right;
-            font-size: 20px;
-            color: $hover-color;
-        }
-        
-        .about-h1-container {
-            display: flex;
-            margin-top: 100px;
-            justify-content: center;
-        }
-
-        .header-text-h3 {
-            display: none;
-        }
-        
-        .about-web-cour {
-        width: 100%;
-        font-size: 80px;
-        text-align: center;
-        font-family: $font1;
-        color: $hover-color;
-        
-        }
-        
-        .about-first-hr {
-            width: 50px;
-            background-color: $hover-color;
-            height: 2px;
-            border: none;
-        }
-
-
-        .paragraph-card {            
-         display: flex;
-         align-items: center;
-         justify-content: center;
-        }
-        
-        .para {
-            letter-spacing: 1px;
-            font-family: $font2;
-            text-align: center;
-            line-height: 2;
-    
-            border-left:   2px solid #f3f0f0;
-            border-right:  2px solid #f3f0f0;
-            width: 40vw;
-        }
-        
-.paragraph-card-container {
-    margin: auto 0px;
-}
-
-        .email {
-            text-align: center;
-            font-family: $font2;
-            font-weight: 500;
-            font-size: 20px;
-        }
-        
-        .small-email {
-            text-align: center;
-            font-family: $font2;
-            font-weight: 500;
-            font-size: 20px;
-            text-decoration: underline;
-        }
-        
-
-        .web-dev {
-            font-size: 20px;
-            font-family: $font2;
-        }
-
-        .about-globe {
-            font-size: 70px;
-            color: $hover-color;
-        }
-
-        .development {
-            // margin-top: 400px;
-            text-align: center;
-            font-family: $font2;
-            font-size: 30px;
-            font-weight: 500;
-            margin-top: 350px;
-        }
-
-
-
-        .logo-decide {
-            text-align: center;
-            font-family: $font2;
-            font-size: 15px;
-            font-weight: 500;
-            margin-top: 40px;
-        }
-        
-        
-        .aboutright-hand {
-            margin: auto 700px;
-            margin-top: 40px;
-            padding: 10px 15px 0px 15px;
-            
-            border-left:   2px solid #f3f0f0;
-            border-right:  2px solid #f3f0f0;
-            height: 300px;
-        }
-        
-        .font-logo-container {
-            display: flex;
-            grid-template-columns: 5px;
-            padding: 50px;
-            width: 15%;
-            margin: 200px 0;
-            margin-top: 50px;
-            border-left:   1px solid #f3f0f0;
-            border-right:  1px solid #f3f0f0;
-            // border: 10px solid green;
-        }
-        .globe-footer {
-            color: $hover-color;
-        }
-
-
-        
-        .student-of-school {
-            font-family: $font1;
-            display: flex;
-            justify-content: center;
-            font-size: 20px;
-            
-        }
-        
-        .take-a-look {
-            font-family: $font2;
-            display: flex;
-            justify-content: center;
-            padding-top: 30px;
-            padding-bottom: 50px;
-        }
-        
-        .overlay-container {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 200px;
-        }
-     
-        .overlay-container img {
-            width: 25%;
-        }
-
-
-.partner-section {
+  .partner-section {
     display: none;
-}
+  }
 
-.footer-section {
+  .footer-section {
     background-color: $primary-dark-color;
     color: $primary-white-color;
     height: 180px;
-}
-.globe-footer{
+  }
+
+  .globe-footer {
     color: $primary-white-color;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 }

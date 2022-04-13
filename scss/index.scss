@@ -174,7 +174,7 @@ body {
 }
 
 .header-text-content {
-  padding:90px 17px 0 17px;
+  padding: 90px 17px 0 17px;
 }
 
 .header-text-h3 {
@@ -452,10 +452,9 @@ body {
 }
 
 @media screen  and (min-width: 768px) {
-
-.open-menu-nav {
-  display: none;
-}
+  .open-menu-nav {
+    display: none;
+  }
 
   .header-content {
     display: flex;
@@ -630,7 +629,7 @@ body {
     font-size: 40px;
     opacity: 0.7;
     overflow: hidden;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .main-curriculum-bg {

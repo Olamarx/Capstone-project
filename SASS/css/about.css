@@ -198,14 +198,14 @@ body {
 .aboutright-hand {
   margin: 10px 700px;
   margin-top: 40px;
-  padding: 10px 15px 0px 15px;
+  padding: 10px 15px 0 15px;
   border-left: 2px solid #f3f0f0;
   border-right: 2px solid #f3f0f0;
   height: 300px;
 }
 
 .globe-footer {
-  color: #ec5242;
+  color: #272a31;
 }
 
 .student-of-school {
@@ -242,28 +242,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer-section {
-  background-color: #272a31;
-  color: #d3d3d3;
-}
-
-.globe-footer {
-  color: #d3d3d3;
-}
-
-.overlay-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -292,10 +270,6 @@ body {
   height: 180px;
 }
 
-.globe-footer {
-  color: #272a31;
-}
-
 @media screen and (min-width: 768px) {
   .about-bigger-body-bg {
     background-size: contain;
@@ -309,7 +283,7 @@ body {
   .home-container {
     height: 10px;
     width: 70%;
-    margin: 10px 00px;
+    margin: 10px 00;
   }
   .home-section {
     display: block;
@@ -363,7 +337,7 @@ body {
     width: 40vw;
   }
   .paragraph-card-container {
-    margin: auto 0px;
+    margin: auto 0;
   }
   .email {
     text-align: center;
@@ -403,7 +377,7 @@ body {
   .aboutright-hand {
     margin: auto 700px;
     margin-top: 40px;
-    padding: 10px 15px 0px 15px;
+    padding: 10px 15px 0 15px;
     border-left: 2px solid #f3f0f0;
     border-right: 2px solid #f3f0f0;
     height: 300px;
@@ -420,9 +394,6 @@ body {
     margin-top: 50px;
     border-left: 1px solid #f3f0f0;
     border-right: 1px solid #f3f0f0;
-  }
-  .globe-footer {
-    color: #ec5242;
   }
   .student-of-school {
     font-family: cocogoose, sans-serif;
