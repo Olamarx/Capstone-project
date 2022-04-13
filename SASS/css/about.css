@@ -37,8 +37,8 @@ body {
 
 .about-bigger-body-bg {
   background-size: contain;
-  height: 100vh;
   margin-top: 70px;
+  height: inherit;
   width: 100vw;
   background-image: url(/images/about-dektop.png);
   background-repeat: no-repeat;
@@ -115,30 +115,32 @@ body {
   font-family: lato, sans-serif;
   text-align: justify;
   line-height: 1.5;
-  width: 70%;
+  width: 75%;
   border-left: 2px solid #f3f0f0;
   border-right: 2px solid #f3f0f0;
+  background-color: white;
 }
 
 .email {
   text-align: center;
   font-family: lato, sans-serif;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .small-email {
   text-align: center;
   font-family: lato, sans-serif;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 15px;
   text-decoration: underline;
 }
 
 .development {
+  padding-top: 100px;
   text-align: center;
-  font-family: lato, sans-serif;
-  font-size: 1rem;
+  font-family: cocogoose, sans-serif;
+  font-size: 25px;
   font-weight: 500;
   margin: 10px 0;
 }
@@ -147,15 +149,27 @@ body {
   text-align: center;
   font-family: lato, sans-serif;
   margin: 10px 40px;
+  margin-top: 70px;
   font-size: 15px;
   font-weight: 500;
 }
 
 .font-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 50px;
-  width: 15%;
-  border-left: 10px solid #f3f0f0;
-  border-right: 10px solid #f3f0f0;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  border-left: 1px solid #f3f0f0;
+  border-right: 1px solid #f3f0f0;
 }
 
 .font-container-container {
@@ -172,17 +186,17 @@ body {
 }
 
 .about-globe {
-  font-size: 50px;
+  font-size: 30px;
   color: #ec5242;
 }
 
 .web-dev {
-  font-size: 20px;
+  font-size: 10px;
   font-family: lato, sans-serif;
 }
 
 .aboutright-hand {
-  margin: auto 700px;
+  margin: 10px 700px;
   margin-top: 40px;
   padding: 10px 15px 0px 15px;
   border-left: 2px solid #f3f0f0;
@@ -202,10 +216,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 100px;
 }
 
 .take-a-look {
+  margin-top: 100px;
   font-family: lato, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,10 +229,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 0 60px;
 }
 
-.the-overlay-section {
+.overlay-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,15 +245,63 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  clear: both;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-section {
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
+.globe-footer {
+  color: #d3d3d3;
+}
+
+.overlay-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.overlay-container img {
+  width: 50%;
+}
+
+.partner-h3 {
+  font-size: 25px;
+}
+
+.footer-section {
+  background-color: transparent;
+  color: #272a31;
+  height: 180px;
+}
+
+.globe-footer {
+  color: #272a31;
 }
 
 @media screen and (min-width: 768px) {
   .about-bigger-body-bg {
     background-size: contain;
-    height: 500px;
     margin-top: 50px;
     width: 100vw;
+    height: initial;
     background-position: 0% 35%;
     background-image: url(/images/about-dektop.png);
     background-repeat: no-repeat;
@@ -240,7 +309,7 @@ body {
   .home-container {
     height: 10px;
     width: 70%;
-    margin: auto auto;
+    margin: 10px 00px;
   }
   .home-section {
     display: block;
@@ -309,17 +378,27 @@ body {
     font-size: 20px;
     text-decoration: underline;
   }
+  .web-dev {
+    font-size: 20px;
+    font-family: lato, sans-serif;
+  }
+  .about-globe {
+    font-size: 70px;
+    color: #ec5242;
+  }
   .development {
     text-align: center;
     font-family: lato, sans-serif;
     font-size: 30px;
     font-weight: 500;
+    margin-top: 350px;
   }
   .logo-decide {
     text-align: center;
     font-family: lato, sans-serif;
     font-size: 15px;
     font-weight: 500;
+    margin-top: 40px;
   }
   .aboutright-hand {
     margin: auto 700px;
@@ -328,6 +407,19 @@ body {
     border-left: 2px solid #f3f0f0;
     border-right: 2px solid #f3f0f0;
     height: 300px;
+  }
+  .font-logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: 5px;
+        grid-template-columns: 5px;
+    padding: 50px;
+    width: 15%;
+    margin: 200px 0;
+    margin-top: 50px;
+    border-left: 1px solid #f3f0f0;
+    border-right: 1px solid #f3f0f0;
   }
   .globe-footer {
     color: #ec5242;
@@ -350,7 +442,40 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .overlay-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 200px;
+  }
+  .overlay-container img {
+    width: 25%;
+  }
+  .partner-section {
+    display: none;
+  }
+  .footer-section {
+    background-color: #272a31;
+    color: #d3d3d3;
+    height: 180px;
+  }
+  .globe-footer {
+    color: #d3d3d3;
   }
 }
 /*# sourceMappingURL=about.css.map */
