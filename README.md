@@ -1,23 +1,25 @@
 ## Desktop Version of the site
+<p align="center">
   <img
   src="./images/desktop-version.jpg"
   alt="Desktop Version"
   >
+</p>
 
 ## Mobile Version of the site
+
+<p align="center">
   <img 
-  align="center"
   src="/images/mobile-version.jpg"
   alt="Mobile Version"
   >
-
+</p>
 
 # Microverse' First Capstone Project
 
 > ### This project is a capstone project at Microverse and it is reopnsive. It is responsive for the mobile version and the desktop version.\
 ## The project template was gotten from [Behabce](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) and it is a product of Creative Commons.
 
-https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 ## Built by Olaoluwa Owoeye (Olamarx)
 
 - HTML
