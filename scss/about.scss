@@ -53,9 +53,10 @@ body {
 .about-bigger-body-bg {
   background-size: contain;
   margin-top: -70px;
+  background-position: top;
   height: inherit;
   width: 100vw;
-  background-image: url(./images/about-dektop.png);
+  background-image: url(../images/about-dektop.png);
   background-repeat: no-repeat;
 }
 
@@ -238,11 +239,12 @@ body {
 @media screen  and (min-width: 768px) {
   .about-bigger-body-bg {
     background-size: contain;
-    margin-top: 50px;
+    margin-top: 30px;
+    background-position: top;
     width: 100vw;
     height: initial;
-    background-position: 0% 35%;
-    background-image: url(./images/about-dektop.png);
+    background-position: 0% 10%;
+    // background-image: url(./images/about-dektop.png);
     background-repeat: no-repeat;
   }
 
