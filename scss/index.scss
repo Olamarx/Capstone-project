@@ -212,7 +212,7 @@ body {
 
 .main-curriculum-bg {
   background-size: cover;
-  height: 70vh;
+  height: 800px;
   width: 100%;
   background-position: top;
   background-image: url(../images/curriculum-bg.jpg);
@@ -242,6 +242,10 @@ body {
 
 .whole-program-container {
   display: none;
+}
+
+.languaguages-body {
+  padding-bottom: 100px;
 }
 
 .languages {
