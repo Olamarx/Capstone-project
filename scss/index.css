@@ -275,13 +275,13 @@ body {
   display: flex;
   gap: 10px;
   color: white;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto 80px;
+  margin: auto 50px;
   background-color: rgba(82, 81, 81, 0.7);
   margin-top: 10px;
   padding: 1px;
