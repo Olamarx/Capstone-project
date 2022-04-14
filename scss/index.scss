@@ -1,0 +1,865 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+
+$font1: cocogoose, sans-serif;
+$font2: lato, sans-serif;
+
+$hover-color : #ec5242;
+$primary-dark-color : #272a31;
+$primary-white-color : #d3d3d3;
+$header-background-color: #faf7f7;
+
+$font-weights: (
+  regular: 400,
+  medium: 500,
+  bold: 700,
+);
+
+body,
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.open-menu-nav {
+  font-size: 30px;
+  margin: 20px;
+  display: inline-flex;
+}
+
+// .open-nav.active {
+//   display: flex;
+// }
+
+.close-nav {
+  display: flex;
+  font-size: 20px;
+  color: $hover-color;
+  justify-content: end;
+  margin: 0;
+}
+
+.time-put-up {
+  margin: 20px 20px 0 0;
+}
+
+.aside-content {
+  position: fixed;
+  background-color: $primary-dark-color;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+.aside-content.active {
+  display: block;
+}
+
+.top-nav-content {
+  display: flex;
+  justify-content: space-around;
+  font-family: $font1;
+  font-size: small;
+  color: $primary-white-color;
+  margin-top: 70px;
+}
+
+.top-nav-content a {
+  color: $primary-white-color;
+  font-family: $font2;
+  font-size: 20px;
+}
+
+.button-logo i {
+  font-size: 60px;
+}
+
+.header-middle-content li a {
+  color: $primary-white-color;
+  font-family: $font2;
+  font-size: 20px;
+}
+
+.font-for-lang i {
+  margin-left: 15px;
+}
+
+.top-nav-content i:hover,
+.top-nav-content a:hover {
+  color: $hover-color;
+}
+
+.header-middle-content li a:hover {
+  color: $hover-color;
+}
+
+.center-btn-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.button-logo {
+  display: flex;
+  border: none;
+  align-items: center;
+  gap: 5px;
+  color: $hover-color;
+  background-color: transparent;
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: $font2;
+}
+
+.header-middle-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.campaign-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid grey;
+  background-color: transparent;
+  color: $header-background-color;
+  padding: 12px 25px;
+  opacity: 0.5;
+}
+
+.campaign-btn-center {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.bigger-body-bg {
+  background-size: cover;
+  height: 600px;
+  margin-top: -70px;
+  width: 100%;
+  background-position: top;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+}
+
+.header-text-content {
+  padding: 90px 17px 0 17px;
+}
+
+.header-text-h3 {
+  color: $hover-color;
+  font-family: $font2;
+}
+
+.header-text-h1 {
+  font-family: $font1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-position: top;
+  background-image: url(../images/red-bg.jpg);
+}
+
+.header-text-para {
+  background-color: white;
+  padding: 5px 8px 0 30px;
+  font-family: $font2;
+}
+
+.next-class-date {
+  font-family: $font1;
+  font-size: 20px;
+  // margin-bottom: 20px;
+}
+
+.main-curriculum-bg {
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  background-position: top;
+  background-image: url(../images/curriculum-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+.body-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.main-curriculum-h3 {
+  color: white;
+  font-family: $font2;
+  font-size: 30px;
+}
+
+.hr {
+  width: 50px;
+  background-color: $hover-color;
+  height: 2px;
+  opacity: 0.9;
+  border: none;
+}
+
+.whole-program-container {
+  display: none;
+}
+
+.languaguages-body {
+  padding-bottom: 100px;
+}
+
+.languages {
+  display: flex;
+  gap: 10px;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto 50px;
+  background-color: rgba(82, 81, 81, 0.7);
+  margin-top: 10px;
+  padding: 1px;
+}
+
+.languages:hover {
+  border: 2px solid white;
+}
+
+.language-h3 {
+  font-family: $font2;
+  color: $hover-color;
+  font-size: 15px;
+}
+
+.languages-para {
+  text-align: start;
+  width: 150px;
+  font-family: $font2;
+  color: white;
+  font-size: 13px;
+}
+
+.font-for-lang {
+  font-size: 50px;
+  color: $hover-color;
+}
+
+.join-our-course-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.join-our-course {
+  font-size: 20px;
+  font-family: $font2;
+  width: 70%;
+  height: 50px;
+  background-color: $hover-color;
+  border: none;
+  color: $primary-white-color;
+}
+
+.li-list {
+  display: flex;
+  gap: 50px;
+  width: 400px;
+}
+
+.our-teachers {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 40px;
+  font-family: $font1;
+  color: $hover-color;
+}
+
+.featured-teacher {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 20px;
+}
+
+.images-cards {
+  max-width: 80px;
+  margin-left: 10px;
+}
+
+.description h3 {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.description h4 {
+  font-family: "Lato", sans-serif;
+  color: $hover-color;
+  margin: 0;
+}
+
+.description p {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.description hr {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  color: gray;
+}
+
+.partner-content {
+  height: 20vh;
+  width: 100%;
+  background-color: $primary-dark-color;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-h3 {
+  font-size: 30px;
+  font-family: $font2;
+  margin-bottom: 0;
+  color: $header-background-color;
+}
+
+.partner-hr {
+  width: 50px;
+  background-color: $hover-color;
+  height: 2px;
+  border: none;
+}
+
+.adverts {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-top: 20px;
+  color: #979494;
+  font-family: $font2;
+  font-size: 15px;
+}
+
+.footer-section {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.right-hand-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: $font1;
+  gap: 5px;
+}
+
+.globe-footer {
+  font-size: 40px;
+}
+
+.span-footer {
+  font-size: 10px;
+  font-family: $font2;
+}
+
+@media screen  and (min-width: 768px) {
+  .open-menu-nav {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: $header-background-color;
+    border-bottom: 1px solid #e9e7e7;
+    box-shadow: 0 0 8px 03px #c4c1c1;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+  }
+
+  .whole-body-nav {
+    width: 100%;
+    height: 40px;
+  }
+
+  .top-nav {
+    width: 100%;
+    background-color: $primary-dark-color;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    z-index: 5;
+  }
+
+  .button-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: $header-background-color;
+  }
+
+  .header-content i {
+    font-size: 50px;
+    color: $hover-color;
+  }
+
+  .header-middle-content {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: $font2;
+    margin-top: 0;
+  }
+
+  .top-nav-content a {
+    color: $primary-white-color;
+  }
+
+  .header-middle-content li a {
+    color: $primary-dark-color;
+  }
+
+  .top-nav-content a:hover {
+    color: $hover-color;
+  }
+
+  .header-middle-content li a:hover {
+    color: $hover-color;
+  }
+
+  .logo-name {
+    font-family: $font1;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-name span {
+    margin: 0;
+    padding: 0;
+  }
+
+  .open-nav {
+    display: none;
+  }
+
+  .close-nav {
+    display: none;
+  }
+
+  .top-nav-content {
+    margin-right: 100px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: $primary-white-color;
+    font-weight: map-get($font-weights, medium);
+    margin-top: 0;
+  }
+
+  .campaign-button i {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .font-for-lang i {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .top-nav-content i:hover {
+    color: $hover-color;
+  }
+
+  .center-btn-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .campaign-btn-center {
+    margin-top: 0;
+  }
+
+  .campaign-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 4px solid $hover-color;
+    color: $hover-color;
+    font-family: $font2;
+    padding: 12px 25px;
+  }
+
+  .bigger-body-bg {
+    background-size: cover;
+    height: 100vh;
+    margin-top: 3px;
+    background-position: top;
+    background-image: url(../images/bkgrnd.png);
+    background-repeat: no-repeat;
+  }
+
+  .aside-content {
+    display: contents;
+  }
+
+  .header-text-content {
+    padding: 90px 100px 0 100px;
+  }
+
+  .header-text-h3 {
+    color: $hover-color;
+    font-family: $font2;
+    font-size: 40px;
+  }
+
+  .header-text-h1 {
+    font-family: $font1;
+    font-size: 80px;
+    background-size: cover;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    background-position: top;
+    line-height: 1.2;
+    color: transparent;
+    background-image: url(../images/red-bg.jpg);
+  }
+
+  .header-text-para {
+    background-color: white;
+    margin: 0% 50% 3% 10%;
+    font-family: $font2;
+    overflow: hidden;
+  }
+
+  .next-class-date {
+    font-family: $font1;
+    font-size: 40px;
+    opacity: 0.7;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  .main-curriculum-bg {
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-position: top;
+    background-image: url(../images/curriculum-bg.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .body-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .main-curriculum-h3 {
+    color: white;
+    font-family: $font2;
+    font-size: 30px;
+  }
+
+  .hr {
+    width: 50px;
+    background-color: $hover-color;
+    height: 2px;
+    border: none;
+  }
+
+  .languages {
+    background-color: rgba(82, 81, 81, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .languages:hover {
+    border: 2px solid white;
+  }
+
+  .font-for-lang {
+    font-size: 60px;
+    color: $hover-color;
+  }
+
+  .center-lang-body {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .languages-body {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+
+  .languages-para {
+    font-family: $font2;
+    width: 150px;
+    text-align: center;
+    color: white;
+  }
+
+  .language-h3 {
+    font-family: $font2;
+    color: $hover-color;
+  }
+
+  .whole-program-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-decoration: underline;
+  }
+
+  .whole-program {
+    color: white;
+    text-align: center;
+  }
+
+  .whole-program:hover {
+    color: $hover-color;
+  }
+
+  .join-our-course-btn-container {
+    display: none;
+  }
+
+  .ul-card {
+    display: flex;
+  }
+
+  .body-of-whole-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: auto 200px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 150px;
+  }
+
+  .image-content-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-content {
+    line-height: 0.3;
+  }
+
+  .name {
+    font-family: $font2;
+  }
+
+  .course-taken-h5 {
+    font-style: italic;
+    font-family: $font2;
+    color: $hover-color;
+    margin-bottom: 13px;
+  }
+
+  // .teacher-hr {
+  //   width: 20px;
+  //   margin: 0;
+  //   padding: 0;
+  //   color: gray;
+  // }
+
+  // .teacher-content-para {
+  //   margin-right: 50px;
+  //   margin-top: 25px;
+  // }
+
+  .li-list {
+    display: flex;
+    gap: 50px;
+    width: 400px;
+  }
+
+  .our-teachers {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: $font1;
+    color: $hover-color;
+  }
+
+  .featured-teacher {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 20px;
+  }
+
+  .images-cards {
+    max-width: 80px;
+    margin-left: 10px;
+  }
+
+  .description h3 {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+  }
+
+  .description h4 {
+    font-family: "Lato", sans-serif;
+    color: $hover-color;
+    margin: 0;
+  }
+
+  .description p {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .description hr {
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    color: gray;
+  }
+
+  .partner-content {
+    height: 20vh;
+    width: 100%;
+    background-color: $primary-dark-color;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partner-h3 {
+    font-size: 30px;
+    font-family: $font2;
+    margin-bottom: 0;
+    color: $header-background-color;
+  }
+
+  .partner-hr {
+    width: 50px;
+    background-color: $hover-color;
+    height: 2px;
+    border: none;
+  }
+
+  .adverts {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 10px;
+    color: #979494;
+    font-family: $font2;
+    font-size: 40px;
+  }
+
+  .footer-section {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0;
+  }
+
+  .right-hand-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: $font1;
+    gap: 5px;
+  }
+
+  .globe-footer {
+    font-size: 80px;
+  }
+
+  .span-footer {
+    font-size: 30px;
+    font-family: $font2;
+  }
+}
