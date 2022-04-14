@@ -684,7 +684,7 @@ body {
   }
   .main-curriculum-bg {
     background-size: cover;
-    height: 55vh;
+    height: 500px;
     width: 100%;
     background-position: top;
     background-image: url(../images/curriculum-bg.jpg);
