@@ -8,7 +8,8 @@ ul {
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
 }
 
@@ -88,6 +89,10 @@ body {
   color: #d3d3d3;
   font-family: lato, sans-serif;
   font-size: 20px;
+}
+
+.font-for-lang i {
+  margin-left: 15px;
 }
 
 .top-nav-content i:hover,
@@ -252,10 +257,6 @@ body {
 .font-for-lang {
   font-size: 50px;
   color: #ec5242;
-}
-
-.font-for-lang i {
-  margin-left: 15px;
 }
 
 .join-our-course-btn-container {
@@ -500,6 +501,11 @@ body {
     margin: 0;
   }
 
+  .font-for-lang i {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
   .top-nav-content i:hover {
     color: #ec5242;
   }
@@ -619,11 +625,6 @@ body {
   .font-for-lang {
     font-size: 60px;
     color: #ec5242;
-  }
-
-  .font-for-lang i {
-    margin-top: 15px;
-    margin-left: 0px;
   }
 
   .center-lang-body {

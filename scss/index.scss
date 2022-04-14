@@ -23,7 +23,8 @@ ul {
   padding: 0;
 }
 
-ul,li {
+ul,
+li {
   list-style-type: none;
 }
 
@@ -107,6 +108,10 @@ body {
   color: $primary-white-color;
   font-family: $font2;
   font-size: 20px;
+}
+
+.font-for-lang i {
+  margin-left: 15px;
 }
 
 .top-nav-content i:hover,
@@ -274,10 +279,6 @@ body {
   color: $hover-color;
 }
 
-.font-for-lang i {
-  margin-left: 15px;
-}
-
 .join-our-course-btn-container {
   display: flex;
   justify-content: center;
@@ -335,7 +336,7 @@ body {
 .description p {
   font-family: "Lato", sans-serif;
   font-size: 15px;
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 .description hr {
@@ -520,6 +521,11 @@ margin-top: 30px;
     margin: 0;
   }
 
+  .font-for-lang i {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
   .top-nav-content i:hover {
     color: $hover-color;
   }
@@ -641,11 +647,6 @@ margin-top: 30px;
     color: $hover-color;
   }
 
-.font-for-lang i {
-  margin-top: 15px;
-  margin-left: 0px;
-}
-
   .center-lang-body {
     display: flex;
     justify-content: space-around;
@@ -742,7 +743,7 @@ margin-top: 30px;
     gap: 50px;
     width: 400px;
   }
-  
+
   .our-teachers {
     display: flex;
     justify-content: center;
@@ -751,44 +752,42 @@ margin-top: 30px;
     font-family: $font1;
     color: $hover-color;
   }
-  
+
   .featured-teacher {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin: 20px;
   }
-  
+
   .images-cards {
     max-width: 80px;
     margin-left: 10px;
   }
-  
+
   .description h3 {
     font-family: "Lato", sans-serif;
     margin: 0;
   }
-  
+
   .description h4 {
     font-family: "Lato", sans-serif;
     color: $hover-color;
     margin: 0;
   }
-  
+
   .description p {
     font-family: "Lato", sans-serif;
     font-size: 15px;
-  margin-top: 30px;
+    margin-top: 30px;
   }
-  
+
   .description hr {
     width: 20px;
     margin: 0;
     padding: 0;
     color: gray;
   }
-  
-
 
   .partner-content {
     height: 20vh;

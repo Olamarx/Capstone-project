@@ -275,7 +275,6 @@ body {
   .about-bigger-body-bg {
     background-size: contain;
     margin-top: 30px;
-    background-position: top;
     width: 100vw;
     height: initial;
     background-position: 0% 10%;
