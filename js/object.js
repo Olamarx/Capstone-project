@@ -32,64 +32,40 @@ const mainCurriculum = [
 ];
 
 const afterHeader = document.querySelector('.bigger-body');
-
-afterHeader.insertAdjacentHTML('afterend', `
-
-    <main class="main-curriculum">
+afterHeader.insertAdjacentHTML('afterend', `  
+  <main class="main-curriculum">
     <div class="main-curriculum-bg">
-        <div class="body-content">
+      <div class="body-content">
         <div class="body-content-block">
-            <h3 class="main-curriculum-h3"> Main Curriculum </h3>
-            <hr class="hr">
+          <h3 class="main-curriculum-h3"> Main Curriculum </h3>
+          <hr class="hr">
         </div>
+      </div>
+
+      <div class="center-lang-body">
+        <div class="languages-body">
+        </div>
+      </div>
+          
+      <div class="whole-program-container">
+        <a href="#" class="whole-program"> SEE THE WHOLE PROGRAMME</a>
+      </div>
+      <div class="join-our-course-btn-container">
+        <button class="join-our-course">
+          Join our course for 2022
+        </button>
+      </div>
     </div>
-<div class="center-lang-body">
-          <div class="languages-body"> 
-              <div class="languages">
-              <div class="font-for-lang">${mainCurriculum[0].font}</div>
-                <h3 class="language-h3">${mainCurriculum[0].name}</h3>
-                <p class="languages-para">${mainCurriculum[0].description}</p>
-            </div>
-
-            <div class="languages">
-            <div class="font-for-lang">${mainCurriculum[1].font}</div>
-            <h3 class="language-h3">${mainCurriculum[1].name}</h3>
-                <p class="languages-para">${mainCurriculum[1].description}</p>
-            </div>
-
-            <div class="languages">
-            <div class="font-for-lang">${mainCurriculum[2].font}</div>
-                <h3 class="language-h3">${mainCurriculum[2].name}</h3>
-                <p class="languages-para">${mainCurriculum[2].description}</p>
-            </div>
-
-
-
-            <div class="languages">
-                <div class="font-for-lang">${mainCurriculum[3].font}</div>
-                <h3 class="language-h3">${mainCurriculum[3].name}</h3>
-                <p class="languages-para">${mainCurriculum[3].description}</p>
-            </div>
-
-            <div class="languages">
-            <div class="font-for-lang">${mainCurriculum[4].font}</div>
-                <h3 class="language-h3">${mainCurriculum[4].name}</h3>
-                <p class="languages-para">${mainCurriculum[4].description}</p>
-            </div>
-
-</div>
-            
-    </div>
-<div class="whole-program-container">
-            <a href="#" class="whole-program"> SEE THE WHOLE PROGRAMME</a>
-           </div>
-           <div class="join-our-course-btn-container">
-    <button class="join-our-course">
-        Join our course for 2022
-    </button>
-</div>
-        
-    </div>
-</main>
-
+  </main>
 `);
+
+const content = document.querySelector('.languages-body');
+for (let i = 0; i < mainCurriculum.length; i += 1) {
+  content.insertAdjacentHTML('afterbegin', `
+    <div class="languages">
+      <div class="font-for-lang">${mainCurriculum[i].font}</div>
+      <h3 class="language-h3">${mainCurriculum[i].name}</h3>
+      <p class="languages-para">${mainCurriculum[i].description}</p>
+    </div>
+  `);
+}
