@@ -43,30 +43,29 @@ afterHeader.insertAdjacentHTML('afterend', `
       </div>
 
       <div class="center-lang-body">
-      <div class="languages-body">
-
+        <div class="languages-body">
+        </div>
       </div>
-          </div>
           
-          <div class="whole-program-container">
-          <a href="#" class="whole-program"> SEE THE WHOLE PROGRAMME</a>
-          </div>
-          <div class="join-our-course-btn-container">
-          <button class="join-our-course">
+      <div class="whole-program-container">
+        <a href="#" class="whole-program"> SEE THE WHOLE PROGRAMME</a>
+      </div>
+      <div class="join-our-course-btn-container">
+        <button class="join-our-course">
           Join our course for 2022
-          </button>
-          </div>
-          </div>
-          </main>
-          `);
+        </button>
+      </div>
+    </div>
+  </main>
+`);
 
 const content = document.querySelector('.languages-body');
 for (let i = 0; i < mainCurriculum.length; i += 1) {
   content.insertAdjacentHTML('afterbegin', `
-          <div class="languages">
-          <div class="font-for-lang">${mainCurriculum[i].font}</div>
-          <h3 class="language-h3">${mainCurriculum[i].name}</h3>
-          <p class="languages-para">${mainCurriculum[i].description}</p>
-          </div>
+    <div class="languages">
+      <div class="font-for-lang">${mainCurriculum[i].font}</div>
+      <h3 class="language-h3">${mainCurriculum[i].name}</h3>
+      <p class="languages-para">${mainCurriculum[i].description}</p>
+    </div>
   `);
 }
